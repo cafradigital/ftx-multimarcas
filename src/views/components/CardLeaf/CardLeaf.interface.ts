@@ -1,6 +1,6 @@
 import React from 'react';
 
-export interface ICardProps {
+export interface ICardLeafProps {
     img: {
         url: string;
         label: string;

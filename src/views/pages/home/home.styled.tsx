@@ -79,7 +79,7 @@ export const PrimarySection = styled.section`
 
 `;
 
-export const SecondarySection = styled.section`
+export const WitheSection = styled.section`
     width: 100%;
 
     padding: 15px;
@@ -92,7 +92,7 @@ export const SecondarySection = styled.section`
     gap: 50px;
 `;
 
-export const ContainerHeaderSecondarySection = styled.div`
+export const ContainerHeaderWhiteSection = styled.div`
     width: 100%;
     
     text-align: center;
@@ -101,7 +101,7 @@ export const ContainerHeaderSecondarySection = styled.div`
         margin: 15px 0px;
     };
 
-    h2 {
+    h1 {
         font-size: 3rem;
         font-weight: bold;
         color: #212196;
@@ -114,7 +114,7 @@ export const ContainerHeaderSecondarySection = styled.div`
     }
 
     @media (max-width: 992px) {
-        h2 {
+        h1 {
             font-size: 2.7rem;
             font-weight: bold;
         }
@@ -125,7 +125,7 @@ export const ContainerHeaderSecondarySection = styled.div`
     };
 
     @media (max-width: 520px) {
-        h2 {
+        h1 {
             font-size: 2.4rem;
             font-weight: bold;
         }
@@ -137,7 +137,52 @@ export const ContainerHeaderSecondarySection = styled.div`
   
 `;
 
-export const ContainerCards = styled.div`
+export const ContainerHeaderBlueSection = styled.div`
+    width: 100%;
+    
+    text-align: center;
+    
+    * {
+        margin: 15px 0px;
+    };
+
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #F28A2E;
+        text-shadow: .5px .5px 5px #00000080;
+    }
+
+    p {
+        font-size: 1.8rem;
+        color: #ffff;
+    }
+
+    @media (max-width: 992px) {
+        h1 {
+            font-size: 2.7rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    };
+
+    @media (max-width: 520px) {
+        h1 {
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    };
+  
+`;
+
+export const ContainerCard = styled.div`
     width: 100%;
 
     display: flex;
@@ -148,7 +193,7 @@ export const ContainerCards = styled.div`
     gap: 30px;
 `;
 
-export const ContainerButtonWhatsApp = styled.div`
+export const ContainerButton = styled.div`
     width: 100%;
     
     padding: 20px;
@@ -158,7 +203,7 @@ export const ContainerButtonWhatsApp = styled.div`
     justify-content: center;
 `;
 
-export const ThirdSession = styled.section`
+export const BlueSection = styled.section`
     width: 100%;
 
     padding: 25px;

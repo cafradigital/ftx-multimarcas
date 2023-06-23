@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerButtonWhatsApp = styled.div`
+export const ContainerButton = styled.div`
     min-width: 100px;
 
     display: flex;
@@ -8,7 +8,11 @@ export const ContainerButtonWhatsApp = styled.div`
     justify-content: center;
     gap: 20px;
 
-    padding: 7px 23px;
+    * {
+        text-align: center;
+    }
+
+    padding: 7px 20px;
     background-color: #7ED957;
 
     border-radius: 50px;

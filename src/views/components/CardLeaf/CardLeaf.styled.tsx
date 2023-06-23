@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerCard = styled.div`
+export const ContainerCardLeaf = styled.div`
     max-width: 250px;
     max-height: 300px;
 
@@ -26,7 +26,7 @@ export const ContainerCard = styled.div`
     }
 `;
 
-export const ContainerImgCard = styled.div`
+export const ContainerImgCardLeaf = styled.div`
     width: 170px;
     height: 170px;
 
