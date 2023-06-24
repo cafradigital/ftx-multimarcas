@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BackgroundImagePrimarySection from '../../assets/BackgroundImagePrimarySection.png';
+import ImgBackgroundOneSection from '../../assets/img/ImgBackgroundOneSection.svg';
 
 export const Header = styled.header`
     width: 100%;
@@ -19,6 +19,7 @@ export const ContainerIconeHeader = styled.div`
     padding: 1.5rem;
 
     img {
+        cursor: pointer;
         width: 100%;
         height: 100%;
     }
@@ -26,7 +27,7 @@ export const ContainerIconeHeader = styled.div`
 
 export const PrimarySection = styled.section`
     width: 100%;
-    height: 80vh;
+    height: 85vh;
 
     display: flex;
     align-items: center;
@@ -35,8 +36,9 @@ export const PrimarySection = styled.section`
 
     text-align: center;
 
-    background-image: url(${BackgroundImagePrimarySection});
-    background-size: 100% 100%;
+    background-image: url(${ImgBackgroundOneSection});
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 
     padding: 0px 15px;
@@ -286,4 +288,128 @@ export const ContainerImgLocation = styled.div`
         width: 100%;
         height: 100%;
     };
+`;
+
+export const ContainerDropDownHome = styled.div`
+    width: 90%;
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 30px;
+    
+`;
+
+export const Footer = styled.footer`
+    width: 100%;
+
+    padding: 20px;
+    
+    gap: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #212196;
+`;
+
+export const CopyRydem = styled.p`
+    color: #ffff;
+    font-size: 1.1rem;
+    font-style: italic;
+
+    margin-top: 10px;
+
+    width: 100%;
+    text-align: center;
+`;
+
+export const ContainerHeaderFooter = styled.div`
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+
+    gap: 40px;
+`;
+
+export const ContainerSectionCafra = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+`;
+
+export const ContainerImgCafra = styled.div`
+    width: 200px;
+    height: 200px;
+
+    object-fit: contain;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+`;
+
+export const ContainerRedesSociaisCafra = styled.div`
+    color: #ffff;
+    font-size: 1.3rem;
+
+    p {
+        padding: 10px;
+    }
+
+    a {
+        color: #ffff;
+    }
+`;
+
+export const ContainerFTXFooter = styled.div`
+    h1 {
+        text-align: center;
+        color: #ffff;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+`;
+
+export const ContainerRedesSociaisFTX = styled.div`
+    display: flex;
+    gap: 30px;
+`;
+
+export const ContainerRedeSocial = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+        color: #ffff;
+        font-size: 1.4rem;
+    }
+`;
+
+
+export const ContainerImageLogoFTX = styled.div`
+    width: 35px;
+    height: 35px;
+
+    object-fit: contain;
+
+    img {
+        width: 100%;
+        height: 100%;
+    };  
 `;

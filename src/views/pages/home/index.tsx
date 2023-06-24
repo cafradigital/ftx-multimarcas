@@ -1,110 +1,146 @@
 import { FC } from 'react';
-import Logo from '../../assets/LogoFTX.png';
-import ImgProductIlustration1 from '../../assets/ImgProductIlustration1.png';
-import ImgProductIlustration2 from '../../assets/ImgProductIlustration2.png';
-import ImgProductIlustration3 from '../../assets/ImgProductIlustration3.png';
-import ImgShopCaieiras from '../../assets/ImgShopCaieiras.png';
-import ImgShopFranciscoMorato from '../../assets/ImgShopFranciscoMorato.png';
-import IconeWhatsApp from '../../assets/IconeWhatsApp.png';
-import { ContainerButton, ContainerCard, ContainerFooterThirdSection, ContainerHeaderWhiteSection, ContainerIconeHeader, ContainerImgLocation, ContainerList, ContainerLocation, Header, PrimarySection, WitheSection, BlueSection, ContainerHeaderBlueSection } from './home.styled';
+
+import ImgEvaluation from '../../assets/img/ImgEvaluation.svg';
+import ImgLogoFtx from '../../assets/img/ImgLogoFtx.svg';
+import ImgProductOne from '../../assets/img/ImgProductOne.svg';
+import ImgProductTwo from '../../assets/img/ImgProductTwo.svg';
+import ImgProductThre from '../../assets/img/ImgProductThre.svg';
+import ImgShopCaieiras from '../../assets/img/ImgShopCaieiras.svg';
+import ImgShopFranciscoMorato from '../../assets/img/ImgShopFranciscoMorato.svg';
+import ImgSocioOne from '../../assets/img/ImgSocioOne.svg';
+import ImgSocioTwo from '../../assets/img/ImgSocioTwo.svg';
+import ImgSocioThre from '../../assets/img/ImgSocioThre.svg';
+import ImgWhatsAppClean from '../../assets/img/ImgWhatsAppClean.svg';
+import ImgWhatsApp from '../../assets/img/ImgWhatsApp.svg';
+import ImgLogoCafra from '../../assets/img/ImgLogoCafra.svg';
+import ImgLogoFecebook from '../../assets/img/ImgLogoFecebook.svg';
+import ImgLogoInstagram from '../../assets/img/ImgLogoInstagram.svg';
+
+import {
+    ContainerButton,
+    ContainerCard,
+    ContainerFooterThirdSection,
+    ContainerHeaderWhiteSection,
+    ContainerIconeHeader,
+    ContainerImgLocation,
+    ContainerList,
+    ContainerLocation,
+    Header,
+    PrimarySection,
+    WitheSection,
+    BlueSection,
+    ContainerHeaderBlueSection,
+    ContainerDropDownHome,
+    Footer,
+    CopyRydem,
+    ContainerHeaderFooter,
+    ContainerSectionCafra,
+    ContainerImgCafra,
+    ContainerImageLogoFTX,
+    ContainerRedesSociaisCafra,
+    ContainerFTXFooter,
+    ContainerRedesSociaisFTX,
+    ContainerRedeSocial
+} from './home.styled';
+
 import { CardLeaf } from '../../components/CardLeaf';
 import { Button } from '../../components/Button';
-import ImgWhatsApp from '../../assets/ImgWhatsApp.png';
-import ImgIconeAvaliação from '../../assets/ImgIconeAvaliação.png';
 import { SimpleCard } from '../../components/SimpleCard';
+import { CardRating } from '../../components/CardRating';
+import { DropDown } from '../../components/DropDown';
 
 export const Home: FC = () => {
     return (
         <main>
             <Header>
                 <ContainerIconeHeader>
-                    <img src={Logo} alt="Logo da FTX Multi Marcas" />
+                    <img src={ImgLogoFtx} alt="Logo da FTX Multi Marcas" />
                 </ContainerIconeHeader>
                 <ContainerIconeHeader>
-                    <img src={IconeWhatsApp} alt="Icone do Whatsapp" />
+                    <img src={ImgWhatsApp} alt="Icone do Whatsapp" />
                 </ContainerIconeHeader>
             </Header>
             <PrimarySection>
-                <h1>Tudo para Moda Masculina <br/> em um só lugar</h1>
-                <p>Variedade e preço baixo <br/> para todos os estilos e idades</p>
+                <h1>Tudo para Moda Masculina <br /> em um só lugar</h1>
+                <p>Variedade e preço baixo <br /> para todos os estilos e idades</p>
             </PrimarySection>
             <WitheSection>
                 <ContainerHeaderWhiteSection>
                     <h1>Nossos Produtos</h1>
-                    <p>Camisetas, bonés, calças e outras peças para qualquer ocasião. Calçados, artigos <br/> esportivos e uma linha incrível de acessórios.</p>
+                    <p>Camisetas, bonés, calças e outras peças para qualquer ocasião. Calçados, artigos <br /> esportivos e uma linha incrível de acessórios.</p>
                 </ContainerHeaderWhiteSection>
                 <ContainerCard>
                     <CardLeaf img={{
                         label: "Imagem de Ilustração de Produto 'Estilo jogador caro'",
-                        url: ImgProductIlustration1
+                        url: ImgProductOne
                     }} >Estilo jogador caro</CardLeaf>
                     <CardLeaf img={{
                         label: "Imagem de Ilustração de Produto 'Moda Básica'",
-                        url: ImgProductIlustration2
+                        url: ImgProductTwo
                     }} >Moda Básica</CardLeaf>
                     <CardLeaf img={{
                         label: "Imagem de Ilustração de Produto 'Estilo cachorro'",
-                        url: ImgProductIlustration3
+                        url: ImgProductThre
                     }} >Estilo cachorro</CardLeaf>
                 </ContainerCard>
                 <ContainerButton>
-                    <Button img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsApp }} >CHAMA NO WHATS</Button>
+                    <Button img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >CHAMA NO WHATS</Button>
                 </ContainerButton>
             </WitheSection>
             <BlueSection>
-                    <h1>Vantagens e Benefícios</h1>
-                    <ContainerList>
-                        <li>Roupas, calçados e acessórios com 100% de garantia. Cliente não fica no prejuizo!</li>
-                        <li>Muita variedade; moda surf, street wear, pluz size, esporte, infantil e muito mais;</li>
-                        <li>Todas as formas de pagamentos e parcelamentos incríveis;</li>
-                        <li>Trabalhamos com encomendas daquela peça rara que você não quer cair em golpe na internet;</li>
-                        <li>Preço do Brás! Sem muvuca, ambiente confortável e total segurança.</li>
-                    </ContainerList>
-                    <ContainerFooterThirdSection>
-                        <ContainerLocation>
-                            <ContainerImgLocation>
-                                <img src={ImgShopCaieiras} alt="Imagem da Loja da FTX de Caieiras - SP" />
-                            </ContainerImgLocation>
-                            <Button img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsApp }} >CAIEIRAS</Button>
-                        </ContainerLocation>
-                        <ContainerLocation>
-                            <ContainerImgLocation>
-                                <img src={ImgShopFranciscoMorato} alt="Imagem da Loja da FTX de Caieiras - SP" />
-                            </ContainerImgLocation>
-                            <Button img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsApp }} >FRANCISCO MORATO</Button>
-                        </ContainerLocation>
-                    </ContainerFooterThirdSection>
-            </BlueSection> 
+                <h1>Vantagens e Benefícios</h1>
+                <ContainerList>
+                    <li>Roupas, calçados e acessórios com 100% de garantia. Cliente não fica no prejuizo!</li>
+                    <li>Muita variedade; moda surf, street wear, pluz size, esporte, infantil e muito mais;</li>
+                    <li>Todas as formas de pagamentos e parcelamentos incríveis;</li>
+                    <li>Trabalhamos com encomendas daquela peça rara que você não quer cair em golpe na internet;</li>
+                    <li>Preço do Brás! Sem muvuca, ambiente confortável e total segurança.</li>
+                </ContainerList>
+                <ContainerFooterThirdSection>
+                    <ContainerLocation>
+                        <ContainerImgLocation>
+                            <img src={ImgShopCaieiras} alt="Imagem da Loja da FTX de Caieiras - SP" />
+                        </ContainerImgLocation>
+                        <Button img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >CAIEIRAS</Button>
+                    </ContainerLocation>
+                    <ContainerLocation>
+                        <ContainerImgLocation>
+                            <img src={ImgShopFranciscoMorato} alt="Imagem da Loja da FTX de Caieiras - SP" />
+                        </ContainerImgLocation>
+                        <Button img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >FRANCISCO MORATO</Button>
+                    </ContainerLocation>
+                </ContainerFooterThirdSection>
+            </BlueSection>
             <WitheSection>
                 <ContainerHeaderWhiteSection>
                     <h1>Quem Somos</h1>
-                    <p>Nascidos e criados em Caieiras, família de 06 irmãos e filhos do Sr Valdemar e <br/> D. Esther. Vivendo e conectados à Caieiras e região até os dias de hoje.</p>
+                    <p>Nascidos e criados em Caieiras, família de 06 irmãos e filhos do Sr Valdemar e <br /> D. Esther. Vivendo e conectados à Caieiras e região até os dias de hoje.</p>
                 </ContainerHeaderWhiteSection>
                 <ContainerCard>
-                    <SimpleCard 
+                    <SimpleCard
                         img={{
                             label: "Imagem do Sócio da FTX 'Daniel Teixeira'",
-                            url: ImgProductIlustration3
+                            url: ImgSocioOne
                         }}
                         text={{
                             title: 'Daniel Teixeira',
                             description: 'Compromentimento e dedicação em tudo.'
                         }}
                     />
-                    <SimpleCard 
+                    <SimpleCard
                         img={{
                             label: "Imagem do Sócio da FTX 'Gilmar Teixeira'",
-                            url: ImgProductIlustration3
+                            url: ImgSocioTwo
                         }}
                         text={{
                             title: 'Gilmar Teixeira',
                             description: 'Amigo e o cara das histórias mais engraçadas.'
                         }}
                     />
-                    <SimpleCard 
+                    <SimpleCard
                         img={{
                             label: "Imagem do Sócio da FTX 'Gilberto Teixeira'",
-                            url: ImgProductIlustration3
+                            url: ImgSocioThre
                         }}
                         text={{
                             title: 'Gilberto Teixeira',
@@ -113,32 +149,99 @@ export const Home: FC = () => {
                     />
                 </ContainerCard>
                 <ContainerButton>
-                    <Button img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsApp }} >ESTAMOS TE ESPERANDO!</Button>
+                    <Button img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >ESTAMOS TE ESPERANDO!</Button>
                 </ContainerButton>
             </WitheSection>
             <BlueSection>
                 <ContainerHeaderBlueSection>
                     <h1>Nossas Avaliações</h1>
-                    <p>Respeito e honestidade, valores que não abrimos mão <br/> e fazemos de tudo para levar até você todos os dias.</p>
+                    <p>Respeito e honestidade, valores que não abrimos mão <br /> e fazemos de tudo para levar até você todos os dias.</p>
                 </ContainerHeaderBlueSection>
+                <ContainerCard>
+                    <CardRating
+                        img={{
+                            label: "Imagem do Sócio da FTX 'Gilberto Teixeira'",
+                            url: ImgSocioOne
+                        }}
+                        text={{
+                            title: 'Daniel Teixeira',
+                            description: 'Depoimentos são frases curtas das pessoas que curtem sua marca. É uma ótima forma de convencer os clientes a experimentar seus serviços.'
+                        }}
+                        Evaluations={3}
+                    />
+                    <CardRating
+                        img={{
+                            label: "Imagem do Sócio da FTX 'Gilberto Teixeira'",
+                            url: ImgSocioOne
+                        }}
+                        text={{
+                            title: 'Daniel Teixeira',
+                            description: 'Depoimentos são frases curtas das pessoas que curtem sua marca. É uma ótima forma de convencer os clientes a experimentar seus serviços.'
+                        }}
+                        Evaluations={1}
+                    />
+                    <CardRating
+                        img={{
+                            label: "Imagem do Sócio da FTX 'Gilberto Teixeira'",
+                            url: ImgSocioOne
+                        }}
+                        text={{
+                            title: 'Daniel Teixeira',
+                            description: 'Depoimentos são frases curtas das pessoas que curtem sua marca. É uma ótima forma de convencer os clientes a experimentar seus serviços.'
+                        }}
+                        Evaluations={4}
+                    />
+                </ContainerCard>
                 <ContainerButton>
-                    <Button img={{ label: 'Imagem do Icone de Avaliação', url: ImgIconeAvaliação }} >NOS AVALIE VOCÊ TAMBÉM!</Button>
+                    <Button img={{ label: 'Imagem do Icone de Avaliação', url: ImgEvaluation }} >NOS AVALIE VOCÊ TAMBÉM!</Button>
                 </ContainerButton>
             </BlueSection>
             <WitheSection>
                 <ContainerHeaderWhiteSection>
                     <h1>FAQ</h1>
-                    <p>Ficou com dúvida? Relaxa... aqui em baixo tem várias perguntas, <br/> todas feitas pelos nossos cliente e respostas por nós no detalhe.</p>
+                    <p>Ficou com dúvida? Relaxa... aqui em baixo tem várias perguntas, <br /> todas feitas pelos nossos cliente e respostas por nós no detalhe.</p>
                 </ContainerHeaderWhiteSection>
-                <div>
-                </div>
+                <ContainerDropDownHome>
+                    <DropDown title='Posso parcelar em até quantas vezes?' description='testedsdasdasdsadsadsadadadadsaadasda1' />
+                    <DropDown title='Posso parcelar em até quantas vezes?' description='testedsdasdasdsadsadsadadadadsaadasda1' />
+                    <DropDown title='Posso parcelar em até quantas vezes?' description='testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 ' />
+                </ContainerDropDownHome>
                 <ContainerButton>
-                    <Button img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsApp }} >ESTÁ COM DÚVIDA? PERGUNTE PARA NÓS!</Button>
+                    <Button img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >ESTÁ COM DÚVIDA? PERGUNTE PARA NÓS!</Button>
                 </ContainerButton>
             </WitheSection>
-            <BlueSection>
-
-            </BlueSection>
+            <Footer>
+                <ContainerHeaderFooter>
+                    <ContainerSectionCafra>
+                        <ContainerImgCafra>
+                            <img src={ImgLogoCafra} alt="Imagem da Logo da Cafra" />
+                        </ContainerImgCafra>
+                        <ContainerRedesSociaisCafra>
+                            <p><strong>E-mail: </strong>cafradigital@gmail.com</p>
+                            <p><strong>Telefone: </strong>(11) 96028-4736</p>
+                            <p><strong>Site: </strong><a href="https://www.cafra.com.br">www.cafra.com.br</a></p>
+                        </ContainerRedesSociaisCafra>
+                    </ContainerSectionCafra>
+                    <ContainerFTXFooter>
+                        <h1>FTX Redes Sociais</h1>
+                        <ContainerRedesSociaisFTX>
+                            <ContainerRedeSocial>
+                                <ContainerImageLogoFTX>
+                                    <img src={ImgLogoFecebook} alt="" />
+                                </ContainerImageLogoFTX>
+                                <p>@ftxmultimarcas</p>
+                            </ContainerRedeSocial>
+                            <ContainerRedeSocial>
+                                <ContainerImageLogoFTX>
+                                    <img src={ImgLogoInstagram} alt="" />
+                                </ContainerImageLogoFTX>
+                                <p>@ftxmultimarcas</p>
+                            </ContainerRedeSocial>
+                        </ContainerRedesSociaisFTX>
+                    </ContainerFTXFooter>
+                </ContainerHeaderFooter>
+                <CopyRydem>FTX Multimarcas ® 2023 - Todos os direitos reservados | Desenvolvido por @CAFRA</CopyRydem>
+            </Footer>
         </main>
     )
 };
