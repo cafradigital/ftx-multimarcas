@@ -6,4 +6,5 @@ export interface IButtonProps {
         label: string;
         url: string;
     }
+    eventClick: () => void;
 };
