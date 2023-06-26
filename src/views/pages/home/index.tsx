@@ -15,6 +15,9 @@ import ImgWhatsApp from '../../assets/img/ImgWhatsApp.svg';
 import ImgLogoCafra from '../../assets/img/ImgLogoCafra.svg';
 import ImgLogoFecebook from '../../assets/img/ImgLogoFecebook.svg';
 import ImgLogoInstagram from '../../assets/img/ImgLogoInstagram.svg';
+import ImgLogoAvaliationUserGrem from '../../assets/img/ImgLogoAvaliationUserGrem.svg';
+import ImgLogoAvaliationUserPink from '../../assets/img/ImgLogoAvaliationUserPink.svg';
+import ImgLogoAvaliationUserOrange from '../../assets/img/ImgLogoAvaliationUserOrange.svg';
 
 import {
     ContainerButton,
@@ -61,7 +64,7 @@ export const Home: FC = () => {
                     <img src={ImgLogoFtx} alt="Logo da FTX Multi Marcas" />
                 </ContainerIconeHeader>
                 <ContainerIconeHeader>
-                    <img onClick={() => sendMessageWhatsApp({ message: '', phoneNumber: '5511960284736'})} src={ImgWhatsApp} alt="Icone do Whatsapp" />
+                    <img onClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511960284736'})} src={ImgWhatsApp} alt="Icone do Whatsapp" />
                 </ContainerIconeHeader>
             </Header>
             <PrimarySection>
@@ -88,7 +91,7 @@ export const Home: FC = () => {
                     }} >Estilo cachorro</CardLeaf>
                 </ContainerCard>
                 <ContainerButton>
-                    <Button eventClick={() => sendMessageWhatsApp({ message: '', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >CHAMA NO WHATS</Button>
+                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >CHAMA NO WHATS</Button>
                 </ContainerButton>
             </WitheSection>
             <BlueSection>
@@ -105,13 +108,13 @@ export const Home: FC = () => {
                         <ContainerImgLocation>
                             <img src={ImgShopCaieiras} alt="Imagem da Loja da FTX de Caieiras - SP" />
                         </ContainerImgLocation>
-                        <Button eventClick={() => sendMessageWhatsApp({ message: '', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >CAIEIRAS</Button>
+                        <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511956556096'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >CAIEIRAS</Button>
                     </ContainerLocation>
                     <ContainerLocation>
                         <ContainerImgLocation>
-                            <img src={ImgShopFranciscoMorato} alt="Imagem da Loja da FTX de Caieiras - SP" />
+                            <img src={ImgShopFranciscoMorato} alt="Imagem da Loja da FTX de Francisco Morato - SP" />
                         </ContainerImgLocation>
-                        <Button eventClick={() => sendMessageWhatsApp({ message: '', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >FRANCISCO MORATO</Button>
+                        <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511994352525'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >FRANCISCO MORATO</Button>
                     </ContainerLocation>
                 </ContainerFooterThirdSection>
             </BlueSection>
@@ -153,7 +156,7 @@ export const Home: FC = () => {
                     />
                 </ContainerCard>
                 <ContainerButton>
-                    <Button eventClick={() => sendMessageWhatsApp({ message: '', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >ESTAMOS TE ESPERANDO!</Button>
+                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >ESTAMOS TE ESPERANDO!</Button>
                 </ContainerButton>
             </WitheSection>
             <BlueSection>
@@ -165,39 +168,39 @@ export const Home: FC = () => {
                     <CardRating
                         img={{
                             label: "Imagem do Sócio da FTX 'Gilberto Teixeira'",
-                            url: ImgSocioOne
+                            url: ImgLogoAvaliationUserGrem
                         }}
                         text={{
-                            title: 'Daniel Teixeira',
-                            description: 'Depoimentos são frases curtas das pessoas que curtem sua marca. É uma ótima forma de convencer os clientes a experimentar seus serviços.'
+                            title: 'Adeildo Lima',
+                            description: 'Comprei umas blusa de frio.ontem na loja FTX  NO eucalipto  todas ficaram ótimas  parabéns pelo atendimento eu recomendo loja tem bastante variedades e ótimos preços.'
                         }}
-                        Evaluations={3}
+                        Evaluations={5}
                     />
                     <CardRating
                         img={{
                             label: "Imagem do Sócio da FTX 'Gilberto Teixeira'",
-                            url: ImgSocioOne
+                            url: ImgLogoAvaliationUserPink
                         }}
                         text={{
-                            title: 'Daniel Teixeira',
-                            description: 'Depoimentos são frases curtas das pessoas que curtem sua marca. É uma ótima forma de convencer os clientes a experimentar seus serviços.'
-                        }}
-                        Evaluations={1}
-                    />
-                    <CardRating
-                        img={{
-                            label: "Imagem do Sócio da FTX 'Gilberto Teixeira'",
-                            url: ImgSocioOne
-                        }}
-                        text={{
-                            title: 'Daniel Teixeira',
-                            description: 'Depoimentos são frases curtas das pessoas que curtem sua marca. É uma ótima forma de convencer os clientes a experimentar seus serviços.'
+                            title: 'Amanda Santos',
+                            description: 'Atendente atencioso, pude comprar camiseta tamanho grande e encomendar tênis tamanho grande. Aparentemente de boa qualidade. Até o momento estou satisfeita com a loja.'
                         }}
                         Evaluations={4}
                     />
+                    <CardRating
+                        img={{
+                            label: "Imagem do Sócio da FTX 'Gilberto Teixeira'",
+                            url: ImgLogoAvaliationUserOrange
+                        }}
+                        text={{
+                            title: 'Alessandra Lima',
+                            description: 'Gosto muito da loja FTX ,muitas variedades de roupas, preços incríveis,toda semana faço questão de dar um pulo na loja para ver as novidades.'
+                        }}
+                        Evaluations={5}
+                    />
                 </ContainerCard>
                 <ContainerButton>
-                    <Button eventClick={() => sendMessageWhatsApp({ message: '', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone de Avaliação', url: ImgEvaluation }} >NOS AVALIE VOCÊ TAMBÉM!</Button>
+                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone de Avaliação', url: ImgEvaluation }} >NOS AVALIE VOCÊ TAMBÉM!</Button>
                 </ContainerButton>
             </BlueSection>
             <WitheSection>
@@ -211,7 +214,7 @@ export const Home: FC = () => {
                     <DropDown title='Posso parcelar em até quantas vezes?' description='testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 ' />
                 </ContainerDropDownHome>
                 <ContainerButton>
-                    <Button eventClick={() => sendMessageWhatsApp({ message: '', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >ESTÁ COM DÚVIDA? PERGUNTE PARA NÓS!</Button>
+                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >ESTÁ COM DÚVIDA? PERGUNTE PARA NÓS!</Button>
                 </ContainerButton>
             </WitheSection>
             <Footer>
