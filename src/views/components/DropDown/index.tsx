@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { IDropDownProps } from "./DropDown.interface";
 import { ContainerDropDown, ContainerInformation, HeaderDropDown, ContainerImg } from "./DropDown.styled";
-import ImgArrowPointerBottom from '../../assets/img/ImgArrowPointerBottom.svg';
+import ImgArrowPointerBottom from '../../assets/img/ImgArrowPointerBottom-min.svg';
 
 export const DropDown: FC<IDropDownProps> = ({ title, description }) => {
     

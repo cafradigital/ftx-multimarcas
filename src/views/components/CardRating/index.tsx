@@ -1,8 +1,8 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC } from 'react';
 import { ICardRatingProps } from './CardRating.interface';
 import { ContainerCardRating, ContainerImg, ContainerImgCardRating, ContainerStars } from './CardRating.styled';
-import ImgGoldStar from '../../assets/img/ImgGoldStar.svg';
-import ImgWhiteStar from '../../assets/img/ImgWhiteStar.svg';
+import ImgGoldStar from '../../assets/img/ImgGoldStar-min.svg';
+import ImgWhiteStar from '../../assets/img/ImgWhiteStar-min.svg';
 
 export const CardRating: FC<ICardRatingProps> = ({ img, text, Evaluations }) => {
 

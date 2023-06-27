@@ -1,23 +1,23 @@
 import { FC } from 'react';
 
-import ImgEvaluation from '../../assets/img/ImgEvaluation.svg';
-import ImgLogoFtx from '../../assets/img/ImgLogoFtx.svg';
-import ImgProductOne from '../../assets/img/ImgProductOne.svg';
-import ImgProductTwo from '../../assets/img/ImgProductTwo.svg';
-import ImgProductThre from '../../assets/img/ImgProductThre.svg';
-import ImgShopCaieiras from '../../assets/img/ImgShopCaieiras.svg';
-import ImgShopFranciscoMorato from '../../assets/img/ImgShopFranciscoMorato.svg';
-import ImgSocioOne from '../../assets/img/ImgSocioOne.svg';
-import ImgSocioTwo from '../../assets/img/ImgSocioTwo.svg';
-import ImgSocioThre from '../../assets/img/ImgSocioThre.svg';
-import ImgWhatsAppClean from '../../assets/img/ImgWhatsAppClean.svg';
-import ImgWhatsApp from '../../assets/img/ImgWhatsApp.svg';
-import ImgLogoCafra from '../../assets/img/ImgLogoCafra.svg';
-import ImgLogoFecebook from '../../assets/img/ImgLogoFecebook.svg';
-import ImgLogoInstagram from '../../assets/img/ImgLogoInstagram.svg';
-import ImgLogoAvaliationUserGrem from '../../assets/img/ImgLogoAvaliationUserGrem.svg';
-import ImgLogoAvaliationUserPink from '../../assets/img/ImgLogoAvaliationUserPink.svg';
-import ImgLogoAvaliationUserOrange from '../../assets/img/ImgLogoAvaliationUserOrange.svg';
+import ImgEvaluation from '../../assets/img/ImgEvaluation-min.svg';
+import ImgLogoFtx from '../../assets/img/ImgLogoFtx-min.svg';
+import ImgProductOne from '../../assets/img/ImgProductOne-min.svg';
+import ImgProductTwo from '../../assets/img/ImgProductTwo-min.svg';
+import ImgProductThre from '../../assets/img/ImgProductThre-min.svg';
+import ImgShopCaieiras from '../../assets/img/ImgShopCaieiras-min.svg';
+import ImgShopFranciscoMorato from '../../assets/img/ImgShopFranciscoMorato-min.svg';
+import ImgSocioOne from '../../assets/img/ImgSocioOne-min.svg';
+import ImgSocioTwo from '../../assets/img/ImgSocioTwo-min.svg';
+import ImgSocioThre from '../../assets/img/ImgSocioThre-min.svg';
+import ImgWhatsAppClean from '../../assets/img/ImgWhatsAppClean-min.svg';
+import ImgWhatsApp from '../../assets/img/ImgWhatsApp-min.svg';
+import ImgLogoCafra from '../../assets/img/ImgLogoCafra-min.svg';
+import ImgLogoFecebook from '../../assets/img/ImgLogoFecebook-min.svg';
+import ImgLogoInstagram from '../../assets/img/ImgLogoInstagram-min.svg';
+import ImgLogoAvaliationUserGrem from '../../assets/img/ImgLogoAvaliationUserGrem-min.svg';
+import ImgLogoAvaliationUserPink from '../../assets/img/ImgLogoAvaliationUserPink-min.svg';
+import ImgLogoAvaliationUserOrange from '../../assets/img/ImgLogoAvaliationUserOrange-min.svg';
 
 import {
     ContainerButton,

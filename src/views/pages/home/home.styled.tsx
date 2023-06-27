@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImgBackgroundOneSection from '../../assets/img/ImgBackgroundOneSection.jpg';
+import ImgBackgroundOneSection from '../../assets/img/ImgBackgroundOneSection-min.jpg';
 
 export const Header = styled.header`
     width: 100%;
