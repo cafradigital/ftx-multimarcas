@@ -80,7 +80,7 @@ export const Home: FC = () => {
                     <CardLeaf img={{
                         label: "Imagem de Ilustração de Produto 'Estilo jogador caro'",
                         url: ImgProductOne
-                    }} >Estilo jogador caro</CardLeaf>
+                    }} >Estilo Jogador Caro</CardLeaf>
                     <CardLeaf img={{
                         label: "Imagem de Ilustração de Produto 'Moda Básica'",
                         url: ImgProductTwo
@@ -88,7 +88,7 @@ export const Home: FC = () => {
                     <CardLeaf img={{
                         label: "Imagem de Ilustração de Produto 'Estilo cachorro'",
                         url: ImgProductThre
-                    }} >Estilo cachorro</CardLeaf>
+                    }} >Estilo Cachorro</CardLeaf>
                 </ContainerCard>
                 <ContainerButton>
                     <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >CHAMA NO WHATS</Button>
