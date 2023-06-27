@@ -1,7 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.e9b6e8c0.js",
-    "static/media/ImgBackgroundOneSection.svg": "/static/media/ImgBackgroundOneSection.e5834b0df28d98e3ac4580c821a80ce6.svg",
+    "main.js": "/static/js/main.7bc84fab.js",
     "static/media/ImgShopFranciscoMorato.svg": "/static/media/ImgShopFranciscoMorato.d67a576b422729ff595782c615f9fda6.svg",
     "static/media/ImgLogoFtx.svg": "/static/media/ImgLogoFtx.70a7eb6800b154e2af807d6a1d76b449.svg",
     "static/media/ImgShopCaieiras.svg": "/static/media/ImgShopCaieiras.4099c1316833f3e769c786195fc8bfc5.svg",
@@ -12,6 +11,7 @@
     "static/media/ImgSocioOne.svg": "/static/media/ImgSocioOne.c587f8d7dd2e03d6564b23e4491805b9.svg",
     "static/media/ImgProductTwo.svg": "/static/media/ImgProductTwo.a0fabb2f6315b73205debd2e8362b222.svg",
     "static/media/ImgLogoCafra.svg": "/static/media/ImgLogoCafra.c40cf914a55111d9f35b3cef7e32b567.svg",
+    "static/media/ImgBackgroundOneSection.jpg": "/static/media/ImgBackgroundOneSection.5ec1868e737400da1c3e.jpg",
     "static/media/ImgWhatsApp.svg": "/static/media/ImgWhatsApp.a42dddaac7cadacb9954e7bce239ae36.svg",
     "static/media/ImgWhatsAppClean.svg": "/static/media/ImgWhatsAppClean.83b89923d9b358ad479694e4588ba71a.svg",
     "static/media/ImgEvaluation.svg": "/static/media/ImgEvaluation.da34147db3def66d8acf1c69a5bd9cff.svg",
@@ -24,9 +24,9 @@
     "static/media/ImgGoldStar.svg": "/static/media/ImgGoldStar.aa35a04c3a23302f780059a46a511e03.svg",
     "static/media/ImgLogoFecebook.svg": "/static/media/ImgLogoFecebook.ac44bff6367587f562edc6f738d9014a.svg",
     "static/media/ImgArrowPointerBottom.svg": "/static/media/ImgArrowPointerBottom.063469fcba105c0549d11cf8dbf882ac.svg",
-    "main.e9b6e8c0.js.map": "/static/js/main.e9b6e8c0.js.map"
+    "main.7bc84fab.js.map": "/static/js/main.7bc84fab.js.map"
   },
   "entrypoints": [
-    "static/js/main.e9b6e8c0.js"
+    "static/js/main.7bc84fab.js"
   ]
 }

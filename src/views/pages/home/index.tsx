@@ -64,7 +64,7 @@ export const Home: FC = () => {
                     <img src={ImgLogoFtx} alt="Logo da FTX Multi Marcas" />
                 </ContainerIconeHeader>
                 <ContainerIconeHeader>
-                    <img onClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511960284736'})} src={ImgWhatsApp} alt="Icone do Whatsapp" />
+                    <img onClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511956556096'})} src={ImgWhatsApp} alt="Icone do Whatsapp" />
                 </ContainerIconeHeader>
             </Header>
             <PrimarySection>
@@ -91,7 +91,7 @@ export const Home: FC = () => {
                     }} >Estilo Cachorro</CardLeaf>
                 </ContainerCard>
                 <ContainerButton>
-                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >CHAMA NO WHATS</Button>
+                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511956556096'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >CHAMA NO WHATS</Button>
                 </ContainerButton>
             </WitheSection>
             <BlueSection>
@@ -156,7 +156,7 @@ export const Home: FC = () => {
                     />
                 </ContainerCard>
                 <ContainerButton>
-                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >ESTAMOS TE ESPERANDO!</Button>
+                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511956556096'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >ESTAMOS TE ESPERANDO!</Button>
                 </ContainerButton>
             </WitheSection>
             <BlueSection>
@@ -200,7 +200,7 @@ export const Home: FC = () => {
                     />
                 </ContainerCard>
                 <ContainerButton>
-                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone de Avaliação', url: ImgEvaluation }} >NOS AVALIE VOCÊ TAMBÉM!</Button>
+                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511956556096'})} img={{ label: 'Imagem do Icone de Avaliação', url: ImgEvaluation }} >NOS AVALIE VOCÊ TAMBÉM!</Button>
                 </ContainerButton>
             </BlueSection>
             <WitheSection>
@@ -214,7 +214,7 @@ export const Home: FC = () => {
                     <DropDown title='Posso parcelar em até quantas vezes?' description='' />
                 </ContainerDropDownHome>
                 <ContainerButton>
-                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >ESTÁ COM DÚVIDA? PERGUNTE PARA NÓS!</Button>
+                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511956556096'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >ESTÁ COM DÚVIDA? PERGUNTE PARA NÓS!</Button>
                 </ContainerButton>
             </WitheSection>
             <Footer>
