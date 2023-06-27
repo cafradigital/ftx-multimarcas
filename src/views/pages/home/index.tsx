@@ -209,9 +209,9 @@ export const Home: FC = () => {
                     <p>Ficou com dúvida? Relaxa... aqui em baixo tem várias perguntas, <br /> todas feitas pelos nossos cliente e respostas por nós no detalhe.</p>
                 </ContainerHeaderWhiteSection>
                 <ContainerDropDownHome>
-                    <DropDown title='Posso parcelar em até quantas vezes?' description='' />
-                    <DropDown title='Posso parcelar em até quantas vezes?' description='' />
-                    <DropDown title='Posso parcelar em até quantas vezes?' description='' />
+                    <DropDown title='Posso parcelar em até quantas vezes?' description='testedsdasdasdsadsadsadadadadsaadasda1' />
+                    <DropDown title='Posso parcelar em até quantas vezes?' description='testedsdasdasdsadsadsadadadadsaadasda1' />
+                    <DropDown title='Posso parcelar em até quantas vezes?' description='testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 testedsdasdasdsadsadsadadadadsaadasda1 ' />
                 </ContainerDropDownHome>
                 <ContainerButton>
                     <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511960284736'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >ESTÁ COM DÚVIDA? PERGUNTE PARA NÓS!</Button>
