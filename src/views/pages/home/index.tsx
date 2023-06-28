@@ -58,8 +58,10 @@ export const Home: FC = () => {
     const { sendMessageWhatsApp } = useSendMessage();
 
     useEffect(() => {
-        ReactFacebookPixel.init('651748680194619', undefined, { autoConfig: true, debug: false });
-        ReactFacebookPixel.pageView();
+        setTimeout(() => {
+            ReactFacebookPixel.init('651748680194619', undefined, { autoConfig: true, debug: false });
+            ReactFacebookPixel.pageView();
+        }, 1500);
     }, []);
 
     return (
