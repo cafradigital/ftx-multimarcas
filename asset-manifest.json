@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.js": "/static/js/main.ec2b270e.js",
+    "main.js": "/static/js/main.c12e3d7f.js",
     "static/media/ImgBackgroundOneSection-min.webp": "/static/media/ImgBackgroundOneSection-min.04992b2cfe734f1bb944.webp",
     "static/media/ImgShopFranciscoMorato-min.webp": "/static/media/ImgShopFranciscoMorato-min.d80efdc61c6809070574.webp",
+    "static/media/ImgBackgroundOneSectionMobile-min.webp": "/static/media/ImgBackgroundOneSectionMobile-min.019a8a76ffc6aa5eee8f.webp",
     "static/media/ImgShopCaieiras-min.webp": "/static/media/ImgShopCaieiras-min.884da0e6ccf9da4ce967.webp",
     "static/media/ImgLogoCafra-min.webp": "/static/media/ImgLogoCafra-min.9a3b27afd5fa4e277cd9.webp",
     "static/media/ImgProductThre-min.webp": "/static/media/ImgProductThre-min.5d90b999285b6e2c0b1c.webp",
@@ -23,9 +24,9 @@
     "static/media/ImgArrowPointerBottom-min.webp": "/static/media/ImgArrowPointerBottom-min.e4d10b998061fe4f8b85.webp",
     "static/media/ImgWhiteStar-min.webp": "/static/media/ImgWhiteStar-min.458b69e756cceb2b8cf6.webp",
     "index.html": "/index.html",
-    "main.ec2b270e.js.map": "/static/js/main.ec2b270e.js.map"
+    "main.c12e3d7f.js.map": "/static/js/main.c12e3d7f.js.map"
   },
   "entrypoints": [
-    "static/js/main.ec2b270e.js"
+    "static/js/main.c12e3d7f.js"
   ]
 }

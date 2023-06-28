@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ImgBackgroundOneSection from '../../assets/img/ImgBackgroundOneSection-min.webp';
+import ImgBackgroundOneSectionMobile from '../../assets/img/ImgBackgroundOneSectionMobile-min.webp';
 
 export const Header = styled.header`
     width: 100%;
@@ -37,6 +38,11 @@ export const PrimarySection = styled.section`
     text-align: center;
 
     background-image: url(${ImgBackgroundOneSection});
+    
+    @media (max-width: 600px) {
+        background-image: url(${ImgBackgroundOneSectionMobile});
+    };
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
