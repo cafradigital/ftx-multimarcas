@@ -19,10 +19,11 @@ export const ContainerCardLeaf = styled.div`
     border-top-right-radius: 30%;
     border-bottom-left-radius: 30%;
 
-    h3 {
+    h2 {
         color: #ffff;
         margin-top: -25px;
         margin-left: 10px;
+        font-size: 1.4rem;
     }
 `;
 

@@ -18,7 +18,7 @@ export const ContainerCardRating = styled.div`
 
     p {
         color: #ffff;
-        font-size: 1.1rem;
+        font-size: 1.25rem;
     }
 `;
 

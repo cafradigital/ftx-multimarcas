@@ -50,7 +50,6 @@ export const HeaderDropDown = styled.div<{ toogleDropDown: boolean }>`
         flex: 1;
         text-align: center;
         color: #ffff;
-        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     };

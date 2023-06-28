@@ -8,7 +8,7 @@ export const CardLeaf: FC<ICardLeafProps> = ({ img, children }) => {
             <ContainerImgCardLeaf>
                 <img src={img.url} alt={img.label} />
             </ContainerImgCardLeaf>
-            <h3>{children}</h3>
+            <h2>{children}</h2>
         </ContainerCardLeaf>
     )
 };

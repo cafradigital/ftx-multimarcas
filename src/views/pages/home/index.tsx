@@ -1,23 +1,22 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 
-import ImgEvaluation from '../../assets/img/ImgEvaluation-min.svg';
-import ImgLogoFtx from '../../assets/img/ImgLogoFtx-min.svg';
-import ImgProductOne from '../../assets/img/ImgProductOne-min.svg';
-import ImgProductTwo from '../../assets/img/ImgProductTwo-min.svg';
-import ImgProductThre from '../../assets/img/ImgProductThre-min.svg';
-import ImgShopCaieiras from '../../assets/img/ImgShopCaieiras-min.svg';
-import ImgShopFranciscoMorato from '../../assets/img/ImgShopFranciscoMorato-min.svg';
-import ImgSocioOne from '../../assets/img/ImgSocioOne-min.svg';
-import ImgSocioTwo from '../../assets/img/ImgSocioTwo-min.svg';
-import ImgSocioThre from '../../assets/img/ImgSocioThre-min.svg';
-import ImgWhatsAppClean from '../../assets/img/ImgWhatsAppClean-min.svg';
-import ImgWhatsApp from '../../assets/img/ImgWhatsApp-min.svg';
-import ImgLogoCafra from '../../assets/img/ImgLogoCafra-min.svg';
-import ImgLogoFecebook from '../../assets/img/ImgLogoFecebook-min.svg';
-import ImgLogoInstagram from '../../assets/img/ImgLogoInstagram-min.svg';
-import ImgLogoAvaliationUserGrem from '../../assets/img/ImgLogoAvaliationUserGrem-min.svg';
-import ImgLogoAvaliationUserPink from '../../assets/img/ImgLogoAvaliationUserPink-min.svg';
-import ImgLogoAvaliationUserOrange from '../../assets/img/ImgLogoAvaliationUserOrange-min.svg';
+import ImgLogoFtx from '../../assets/img/ImgLogoFtx-min.webp';
+import ImgProductOne from '../../assets/img/ImgProductOne-min.webp';
+import ImgProductTwo from '../../assets/img/ImgProductTwo-min.webp';
+import ImgProductThre from '../../assets/img/ImgProductThre-min.webp';
+import ImgShopCaieiras from '../../assets/img/ImgShopCaieiras-min.webp';
+import ImgShopFranciscoMorato from '../../assets/img/ImgShopFranciscoMorato-min.webp';
+import ImgSocioOne from '../../assets/img/ImgSocioOne-min.webp';
+import ImgSocioTwo from '../../assets/img/ImgSocioTwo-min.webp';
+import ImgSocioThre from '../../assets/img/ImgSocioThre-min.webp';
+import ImgWhatsAppClean from '../../assets/img/ImgWhatsAppClean-min.webp';
+import ImgWhatsApp from '../../assets/img/ImgWhatsApp-min.webp';
+import ImgLogoCafra from '../../assets/img/ImgLogoCafra-min.webp';
+import ImgLogoFecebook from '../../assets/img/ImgLogoFecebook-min.webp';
+import ImgLogoInstagram from '../../assets/img/ImgLogoInstagram-min.webp';
+import ImgLogoAvaliationUserGrem from '../../assets/img/ImgLogoAvaliationUserGrem-min.webp';
+import ImgLogoAvaliationUserPink from '../../assets/img/ImgLogoAvaliationUserPink-min.webp';
+import ImgLogoAvaliationUserOrange from '../../assets/img/ImgLogoAvaliationUserOrange-min.webp';
 
 import {
     ContainerButton,
@@ -52,10 +51,16 @@ import { SimpleCard } from '../../components/SimpleCard';
 import { CardRating } from '../../components/CardRating';
 import { DropDown } from '../../components/DropDown';
 import { useSendMessage } from '../../hooks/useSendMessage';
+import ReactFacebookPixel from 'react-facebook-pixel';
 
 export const Home: FC = () => {
 
     const { sendMessageWhatsApp } = useSendMessage();
+
+    useEffect(() => {
+        ReactFacebookPixel.init('651748680194619', undefined, { autoConfig: true, debug: false });
+        ReactFacebookPixel.pageView();
+    }, []);
 
     return (
         <main>
@@ -200,7 +205,7 @@ export const Home: FC = () => {
                     />
                 </ContainerCard>
                 <ContainerButton>
-                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511956556096'})} img={{ label: 'Imagem do Icone de Avaliação', url: ImgEvaluation }} >NOS AVALIE VOCÊ TAMBÉM!</Button>
+                    <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511956556096'})} img={{ label: 'Imagem do Icone de Avaliação', url: ImgWhatsAppClean }} >ENTRE EM CONTATO AGORA MESMO!</Button>
                 </ContainerButton>
             </BlueSection>
             <WitheSection>
@@ -209,9 +214,11 @@ export const Home: FC = () => {
                     <p>Ficou com dúvida? Relaxa... aqui em baixo tem várias perguntas, <br /> todas feitas pelos nossos cliente e respostas por nós no detalhe.</p>
                 </ContainerHeaderWhiteSection>
                 <ContainerDropDownHome>
-                    <DropDown title='Posso parcelar em até quantas vezes?' description='' />
-                    <DropDown title='Posso parcelar em até quantas vezes?' description='' />
-                    <DropDown title='Posso parcelar em até quantas vezes?' description='' />
+                    <DropDown title='Qual modelo de roupa a loja trabalha?' description='Somos 100% focado em moda masculina; camisetas, bonés, calçados e tudo que um homem precisa para se vestir bem.' />
+                    <DropDown title='Quais as formas de pagamento vocês trabalham?' description='Aceitamos todas as formas de pagamento e parcelamos em até 10x sem juros.' />
+                    <DropDown title='Caso eu não goste da roupa ou tenha algum defeito posso trocar?' description='Nossa política é que o cliente nunca fica no prejuízo. Havendo a necessidade de troca é só procurar uma das loja e trocar pela peça que você ou a pessoa que você presenteou escolher. Aparecendo qualquer defeito na peça trocamos sem qualquer discussão.' />
+                    <DropDown title='Quais modelos de camisetas vocês trabalham?' description='Diversos modelos; peruanas, longline, esportivas, over size, social e muito mais.' />
+                    <DropDown title='Quais tamanhos de roupas vocês trabalham?' description='Temos body ou macacão para crianças recém-nascidas até o tamanho G6.' />
                 </ContainerDropDownHome>
                 <ContainerButton>
                     <Button eventClick={() => sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511956556096'})} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >ESTÁ COM DÚVIDA? PERGUNTE PARA NÓS!</Button>
@@ -234,13 +241,13 @@ export const Home: FC = () => {
                         <ContainerRedesSociaisFTX>
                             <ContainerRedeSocial>
                                 <ContainerImageLogoFTX>
-                                    <img src={ImgLogoFecebook} alt="" />
+                                    <img src={ImgLogoFecebook} alt="Logo do Fecebook" />
                                 </ContainerImageLogoFTX>
                                 <p>@ftxmultimarcas</p>
                             </ContainerRedeSocial>
                             <ContainerRedeSocial>
                                 <ContainerImageLogoFTX>
-                                    <img src={ImgLogoInstagram} alt="" />
+                                    <img src={ImgLogoInstagram} alt="Logo do Instagram" />
                                 </ContainerImageLogoFTX>
                                 <p>@ftxmultimarcas</p>
                             </ContainerRedeSocial>

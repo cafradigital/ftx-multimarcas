@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { ICardRatingProps } from './CardRating.interface';
 import { ContainerCardRating, ContainerImg, ContainerImgCardRating, ContainerStars } from './CardRating.styled';
-import ImgGoldStar from '../../assets/img/ImgGoldStar-min.svg';
-import ImgWhiteStar from '../../assets/img/ImgWhiteStar-min.svg';
+import ImgGoldStar from '../../assets/img/ImgGoldStar-min.webp';
+import ImgWhiteStar from '../../assets/img/ImgWhiteStar-min.webp';
 
 export const CardRating: FC<ICardRatingProps> = ({ img, text, Evaluations }) => {
 

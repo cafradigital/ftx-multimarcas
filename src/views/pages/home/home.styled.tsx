@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImgBackgroundOneSection from '../../assets/img/ImgBackgroundOneSection-min.jpg';
+import ImgBackgroundOneSection from '../../assets/img/ImgBackgroundOneSection-min.webp';
 
 export const Header = styled.header`
     width: 100%;
@@ -75,7 +75,7 @@ export const PrimarySection = styled.section`
         }
 
         p {
-            font-size: 1rem;
+            font-size: 1.25rem;
         }
     };
 
@@ -319,7 +319,7 @@ export const Footer = styled.footer`
 
 export const CopyRydem = styled.p`
     color: #ffff;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-style: italic;
 
     margin-top: 10px;
@@ -348,7 +348,7 @@ export const ContainerSectionCafra = styled.div`
 `;
 
 export const ContainerImgCafra = styled.div`
-    width: 200px;
+    width: 250px;
     height: 200px;
 
     object-fit: contain;
@@ -403,8 +403,8 @@ export const ContainerRedeSocial = styled.div`
 
 
 export const ContainerImageLogoFTX = styled.div`
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 30px;
 
     object-fit: contain;
 
