@@ -61,7 +61,7 @@ export const Home: FC = () => {
         setTimeout(() => {
             ReactFacebookPixel.init('651748680194619', undefined, { autoConfig: true, debug: false });
             ReactFacebookPixel.pageView();
-        }, 1500);
+        }, 2000);
     }, []);
 
     return (
