@@ -66,7 +66,7 @@ export const Home: FC = () => {
     
     const sendMessage = () => {
         sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511956556096'})
-        ReactFacebookPixel.trackSingle('651748680194619', 'Entrou em Contato',);
+        ReactFacebookPixel.trackSingle('651748680194619', 'Purchase',);
     };
 
     return (
