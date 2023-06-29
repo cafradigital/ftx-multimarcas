@@ -59,14 +59,14 @@ export const Home: FC = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            ReactFacebookPixel.init('651748680194619', undefined, { autoConfig: true, debug: false });
+            ReactFacebookPixel.init('1310992763100155', undefined, { autoConfig: true, debug: false });
             ReactFacebookPixel.pageView();
         }, 1000);
     }, []);
     
     const sendMessage = () => {
         sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511956556096'})
-        ReactFacebookPixel.trackSingle('651748680194619', 'Lead');
+        ReactFacebookPixel.trackSingle('1310992763100155', 'Lead');
     };
 
     return (
@@ -80,7 +80,7 @@ export const Home: FC = () => {
                 </ContainerIconeHeader>
             </Header>
             <PrimarySection>
-                <h1>Tudo para Moda Masculina. <br /> em um só lugar</h1>
+                <h1>Tudo para Moda Masculina <br /> em um só lugar</h1>
                 <p>Variedade e preço baixo <br /> para todos os estilos e idades</p>
             </PrimarySection>
             <WitheSection>
