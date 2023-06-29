@@ -51,7 +51,9 @@ import { SimpleCard } from '../../components/SimpleCard';
 import { CardRating } from '../../components/CardRating';
 import { DropDown } from '../../components/DropDown';
 import { useSendMessage } from '../../hooks/useSendMessage';
+
 import ReactFacebookPixel from 'react-facebook-pixel';
+import TagManager from 'react-gtm-module';
 
 export const Home: FC = () => {
 
@@ -61,12 +63,12 @@ export const Home: FC = () => {
         setTimeout(() => {
             ReactFacebookPixel.init('1310992763100155', undefined, { autoConfig: true, debug: false });
             ReactFacebookPixel.pageView();
+            TagManager.initialize({ gtmId: 'GTM-K2XF8X9' });
         }, 1000);
     }, []);
     
     const sendMessage = () => {
         sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511956556096'})
-        ReactFacebookPixel.track('Lead');
     };
 
     return (
@@ -128,7 +130,6 @@ export const Home: FC = () => {
                         </ContainerImgLocation>
                         <Button eventClick={() => {
                             sendMessageWhatsApp({ message: 'Olá, estou entrando em contato pelo site da FTX.', phoneNumber: '5511994352525'})
-                            ReactFacebookPixel.track('Entrou em Contato')
                         }} img={{ label: 'Imagem do Icone do WhatsApp', url: ImgWhatsAppClean }} >FRANCISCO MORATO</Button>
                     </ContainerLocation>
                 </ContainerFooterThirdSection>
