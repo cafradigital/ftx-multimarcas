@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
-export const ContainerButton = styled.button`
+export const ContainerButton = styled.a`
     min-width: 100px;
 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
+
+    color: black;
+    text-decoration: none;
 
     outline: none;
 

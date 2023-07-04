@@ -5,6 +5,6 @@ export interface IButtonProps {
     img?: {
         label: string;
         url: string;
-    }
-    eventClick: () => void;
+    },
+    href: string;
 };

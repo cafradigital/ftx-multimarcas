@@ -2,9 +2,9 @@ import { FC } from 'react';
 import { IButtonProps } from './Button.interface';
 import { ContainerButton, ContainerIconeWhatsApp } from './Button.styled';
 
-export const Button: FC<IButtonProps> = ({ children, img, eventClick }) => {
+export const Button: FC<IButtonProps> = ({ children, img, href }) => {
     return (
-        <ContainerButton onClick={eventClick} >
+        <ContainerButton href={href} >
             {
                 img ? 
                     <ContainerIconeWhatsApp>
