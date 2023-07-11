@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { IGlobalTheme } from '../../../../GlobalStyleds';
+import { IGlobalTheme } from '../../interfaces';
 import { ISectionStyleds } from './interfaces';
 
 export const SectionContainer = styled.section<{

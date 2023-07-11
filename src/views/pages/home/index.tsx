@@ -3,15 +3,15 @@ import { Main, Section } from '../../components/containers';
 import { Loading } from '../../components/loading';
 
 export const Home: FC = () => {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     return (
         <Main>
             {loading && (
-                <Loading type="five" backgroundColor="#ffff" size="big" />
+                <Loading size="big" type="four" backgroundColor="#ffff" />
             )}
             <Section
-                height="full"
+                height="auto"
                 align={{ 'align-items': 'center', 'justify-content': 'center' }}
             >
                 <div style={{ background: 'red' }}>dadasdasdasda</div>

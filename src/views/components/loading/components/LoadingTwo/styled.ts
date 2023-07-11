@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { IGlobalTheme, ILoadingStyleds } from '../../intefaces';
+import { IGlobalTheme } from '../../../interfaces';
+import { ILoadingStyleds } from '../../intefaces';
 
 export const Loading = styled.div<{
     styled: ILoadingStyleds;
