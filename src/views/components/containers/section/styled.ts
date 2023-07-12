@@ -9,7 +9,14 @@ export const SectionContainer = styled.section<{
     width: 100%;
 
     display: flex;
-    flex-wrap: wrap;
+
+    text-align: ${({ styled }) =>
+        styled.align?.textAlign ? styled.align?.textAlign : 'initial'};
+
+    gap: ${({ styled }) => (styled.align?.gap ? styled.align?.gap : '')};
+
+    flex-wrap: ${({ styled }) =>
+        styled.align?.wrap ? styled.align?.wrap : 'wrap'};
 
     flex-direction: ${({ styled }) =>
         styled.align?.direction ? styled.align?.direction : 'row'};
@@ -31,6 +38,8 @@ export const SectionContainer = styled.section<{
             case 'full':
                 return '100vh';
         }
+
+        return styled.height;
     }};
 
     padding: ${({ styled }) => {
@@ -56,6 +65,8 @@ export const SectionContainer = styled.section<{
                 return theme.secondary.backgroundColor;
             case 'third':
                 return theme.third.backgroundColor;
+            case 'none':
+                return 'transparent';
         }
     }};
 `;

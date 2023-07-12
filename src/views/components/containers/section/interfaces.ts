@@ -1,24 +1,35 @@
-import { IContainerProps } from '../interfaces';
+import { IContainerProps, IStyledsContainer } from '../interfaces';
 
-export interface ISectionStyleds {
-    height?: 'full' | 'auto';
+export interface ISectionStyleds extends IStyledsContainer {
+    height?:
+        | 'full'
+        | 'auto'
+        | '5vh'
+        | '10vh'
+        | '15vh'
+        | '20vh'
+        | '25vh'
+        | '30vh'
+        | '35vh'
+        | '40vh'
+        | '45vh'
+        | '50vh'
+        | '55vh'
+        | '60vh'
+        | '65vh'
+        | '70vh'
+        | '75vh'
+        | '80vh'
+        | '85vh'
+        | '90vh'
+        | '95vh';
     padding?:
         | 'auto'
         | 'full-edges'
         | 'side-edges'
         | 'top-and-bottom-edges'
         | 'none';
-    backgroundColor?: 'primary' | 'secondary' | 'third';
-    align?: {
-        direction?: 'column' | 'row' | 'column-reverse' | 'row-reverse';
-        'justify-content': 'center' | 'flex-end' | 'flex-start';
-        'align-items':
-            | 'center'
-            | 'space-between'
-            | 'space-around'
-            | 'flex-end'
-            | 'flex-start';
-    };
+    backgroundColor?: 'primary' | 'secondary' | 'third' | 'none';
 }
 
 export interface ISectionProps extends ISectionStyleds, IContainerProps {

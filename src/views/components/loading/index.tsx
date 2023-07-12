@@ -7,17 +7,8 @@ import {
     LoadingThree,
     LoadingTwo,
 } from './components';
+import { ILoadingProps } from './intefaces';
 import { ContainerLoading } from './styled';
-
-export interface ILoadingStyleds {
-    size: 'small' | 'medium' | 'big';
-    color?: string;
-    backgroundColor?: string;
-}
-
-export interface ILoadingProps extends ILoadingStyleds {
-    type: 'one' | 'two' | 'three' | 'four' | 'five';
-}
 
 export const Loading: React.FC<ILoadingProps> = ({
     type,
