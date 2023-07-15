@@ -1,8 +1,6 @@
 import { FC, useEffect, useState } from 'react';
-import ReactFacebookPixel from 'react-facebook-pixel';
-import TagManager from 'react-gtm-module';
 import primarySectionImage from '../../../assets/img/ImgBackgroundOneSection-min.webp';
-import { Main, Section } from '../../components/containers';
+import { HeaderSection, Main, Section } from '../../components/containers';
 import { ContainerImage } from '../../components/containers/image';
 import { Loading } from '../../components/loading';
 import { pageLaunchFunction } from '../../shared/initialView';
@@ -12,14 +10,14 @@ export const Home: FC = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        pageLaunchFunction(setLoading);
-
-        ReactFacebookPixel.init('1310992763100155', undefined, {
-            autoConfig: true,
-            debug: false,
+        pageLaunchFunction({
+            setLoading,
+            initialTags: {
+                tagFacebookPixel: '1310992763100155',
+                tagManager: 'GTM-K2XF8X9',
+            },
+            addPageView: true,
         });
-
-        TagManager.initialize({ gtmId: 'GTM-K2XF8X9' });
     }, []);
 
     return (
@@ -27,7 +25,9 @@ export const Home: FC = () => {
             {loading && (
                 <Loading size="big" type="four" backgroundColor="#e3e3e3" />
             )}
-            <Section height="85vh" backgroundColor="none" padding="none">
+            <Section
+                styled={{ height: '8.5x', theme: 'none', padding: 'none' }}
+            >
                 <ContainerImage
                     typeAdaptation="cover"
                     url={primarySectionImage}
@@ -49,19 +49,23 @@ export const Home: FC = () => {
                 </ContainerImage>
             </Section>
             <Section
-                align={{
-                    'align-items': 'center',
-                    direction: 'column',
-                    gap: '10rem',
+                styled={{
+                    align: {
+                        'align-items': 'center',
+                        direction: 'column',
+                        gap: '10rem',
+                    },
+                    padding: 'full-edges',
+                    theme: 'secondary',
                 }}
-                padding="full-edges"
-                backgroundColor="secondary"
             >
-                <div>
-                    <h1>ddasdasads</h1>
-                    <p>dasdadasd</p>
-                </div>
-                <div>dasdasda</div>
+                <HeaderSection
+                    title="Nossos Produtos"
+                    subTitle={`Camisetas, bonés, calças e outras peças para qualquer ocasião. Calçados, artigos 
+                    esportivos e uma linha incrível de acessórios`}
+                    theme="secondary"
+                />
+                <div>dsadadsa</div>
                 <button>dsadads</button>
             </Section>
         </Main>

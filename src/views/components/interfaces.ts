@@ -1,5 +1,5 @@
 type themePropsStyled = {
-    color: string;
+    textColor: string;
     backgroundColor: string;
     colorHeaders: string;
 };

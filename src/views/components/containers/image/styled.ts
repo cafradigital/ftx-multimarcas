@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { IContainerImageStyled } from './interfaces';
 
-export const ImageContainer = styled.image<{
+export const ImageContainer = styled.div<{
     styled: IContainerImageStyled;
     imageUrl: string;
 }>`
@@ -31,7 +31,7 @@ export const ImageContainer = styled.image<{
             ? styled.align?.['justify-content']
             : 'initial'};
 
-    background-image: ${({ imageUrl }) => `url(${imageUrl})`};
+    background-image: ${({ imageUrl }) => (imageUrl ? `url(${imageUrl})` : '')};
     background-position: center;
     background-size: ${({ styled }) =>
         styled.typeAdaptation ? styled.typeAdaptation : 'contain'};

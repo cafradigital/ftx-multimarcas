@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 type themePropsStyled = {
-    color: string;
+    textColor: string;
     backgroundColor: string;
     colorHeaders: string;
 };
@@ -27,17 +27,17 @@ export interface IGlobalTheme {
 export const GlobalTheme: IGlobalTheme = {
     primary: {
         backgroundColor: '#212196',
-        color: '#ffff',
+        textColor: '#ffffff',
         colorHeaders: '#f28a2e',
     },
     secondary: {
-        backgroundColor: '#ffff',
-        color: '#0000',
+        backgroundColor: '#ffffff',
+        textColor: '#000000',
         colorHeaders: '#212196',
     },
     third: {
-        backgroundColor: '#ffff',
-        color: '#0000',
-        colorHeaders: '#ffff',
+        backgroundColor: '#ffffff',
+        textColor: '#000000',
+        colorHeaders: '#ffffff',
     },
 };

@@ -1,6 +1,7 @@
+import React from 'react';
 import { IContainerProps, IStyledsContainer } from '../interfaces';
 
-export interface ISectionStyleds extends IStyledsContainer {
+export interface IContainerComponentStyled extends IStyledsContainer {
     height?:
         | 'full'
         | 'auto'
@@ -23,16 +24,9 @@ export interface ISectionStyleds extends IStyledsContainer {
         | '8.5x'
         | '9x'
         | '9.5x';
-    padding?:
-        | 'auto'
-        | 'full-edges'
-        | 'side-edges'
-        | 'top-and-bottom-edges'
-        | 'none';
-    theme?: 'primary' | 'secondary' | 'third' | 'none';
 }
 
-export interface ISectionProps extends IContainerProps {
+export interface IContainerComponentProps extends IContainerProps {
+    styled?: IContainerComponentStyled;
     customStyleds?: React.CSSProperties;
-    styled: ISectionStyleds;
 }

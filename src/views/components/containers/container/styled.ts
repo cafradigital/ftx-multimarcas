@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { IGlobalTheme } from '../../interfaces';
-import { ISectionStyleds } from './interfaces';
+import { IContainerComponentStyled } from './interfaces';
 
-export const SectionContainer = styled.section<{
-    styled: ISectionStyleds;
+export const StyledContainer = styled.div<{
+    styled: IContainerComponentStyled;
     theme: IGlobalTheme;
 }>`
     width: 100%;
@@ -58,33 +58,5 @@ export const SectionContainer = styled.section<{
 
         if (styled.height) return heights[styled.height];
         else return 'auto';
-    }};
-
-    padding: ${({ styled }) => {
-        switch (styled?.padding) {
-            case 'auto':
-                return '0% 5%';
-            case 'full-edges':
-                return '2.5% 5%';
-            case 'side-edges':
-                return '0% 5%';
-            case 'top-and-bottom-edges':
-                return '2.5% 0%';
-            case 'none':
-                return 'none';
-        }
-    }};
-
-    background-color: ${({ styled, theme }) => {
-        switch (styled.theme) {
-            case 'primary':
-                return theme.primary.backgroundColor;
-            case 'secondary':
-                return theme.secondary.backgroundColor;
-            case 'third':
-                return theme.third.backgroundColor;
-            case 'none':
-                return 'transparent';
-        }
     }};
 `;
