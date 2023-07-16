@@ -26,7 +26,8 @@ export interface IContainerComponentStyled extends IStyledsContainer {
         | '9.5x';
 }
 
-export interface IContainerComponentProps extends IContainerProps {
-    styled?: IContainerComponentStyled;
+export interface IContainerComponentProps
+    extends IContainerProps,
+        IContainerComponentStyled {
     customStyleds?: React.CSSProperties;
 }

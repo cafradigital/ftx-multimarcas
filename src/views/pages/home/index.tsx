@@ -1,12 +1,19 @@
 import { FC, useEffect, useState } from 'react';
-import primarySectionImage from '../../../assets/img/ImgBackgroundOneSection-min.webp';
-import { HeaderSection, Main, Section } from '../../components/containers';
-import { ContainerImage } from '../../components/containers/image';
+import { DataLandingPage } from '../../../store';
+import { LeafCard } from '../../components/cards';
+import {
+    BackgroundImage,
+    Container,
+    HeaderSection,
+    Main,
+    Section,
+} from '../../components/containers';
 import { Loading } from '../../components/loading';
 import { pageLaunchFunction } from '../../shared/initialView';
 import { TextPrimarySection, TitlePrimarySection } from './styled';
 
 export const Home: FC = () => {
+    const { primarySection, secondarySection } = DataLandingPage;
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -25,12 +32,13 @@ export const Home: FC = () => {
             {loading && (
                 <Loading size="big" type="four" backgroundColor="#e3e3e3" />
             )}
-            <Section
-                styled={{ height: '8.5x', theme: 'none', padding: 'none' }}
-            >
-                <ContainerImage
+            <Section height="8.5x" theme={primarySection.theme} padding="none">
+                <BackgroundImage
                     typeAdaptation="cover"
-                    url={primarySectionImage}
+                    img={{
+                        url: primarySection.image.url,
+                        label: primarySection.image.label,
+                    }}
                     align={{
                         direction: 'column',
                         'align-items': 'center',
@@ -40,32 +48,51 @@ export const Home: FC = () => {
                     }}
                 >
                     <TitlePrimarySection>
-                        Tudo para Moda Masculina <br /> em um só lugar
+                        {primarySection.texts.title}
                     </TitlePrimarySection>
                     <TextPrimarySection>
-                        Variedade e preço baixo <br /> para todos os estilos e
-                        idades
+                        {primarySection.texts.subTitle}
                     </TextPrimarySection>
-                </ContainerImage>
+                </BackgroundImage>
             </Section>
             <Section
-                styled={{
-                    align: {
-                        'align-items': 'center',
-                        direction: 'column',
-                        gap: '10rem',
-                    },
-                    padding: 'full-edges',
-                    theme: 'secondary',
+                align={{
+                    'align-items': 'center',
+                    direction: 'column',
+                    gap: '5rem',
                 }}
+                padding="full-edges"
+                theme={secondarySection.theme}
             >
                 <HeaderSection
-                    title="Nossos Produtos"
-                    subTitle={`Camisetas, bonés, calças e outras peças para qualquer ocasião. Calçados, artigos 
-                    esportivos e uma linha incrível de acessórios`}
-                    theme="secondary"
+                    title={secondarySection.texts.title}
+                    subTitle={secondarySection.texts.subTitle}
+                    theme={secondarySection.theme}
                 />
-                <div>dsadadsa</div>
+                <Container
+                    align={{
+                        'align-items': 'center',
+                        'justify-content': 'space-around',
+                        wrap: 'wrap',
+                        gap: '5rem',
+                    }}
+                >
+                    {secondarySection.cards.map((card, index) => (
+                        <LeafCard
+                            key={index}
+                            title={card.title}
+                            size="medium"
+                            theme={secondarySection.theme}
+                            img={{
+                                url: card.img.url,
+                                label: card.img.label,
+                            }}
+                            customStyleds={{
+                                color: '#ffffff',
+                            }}
+                        />
+                    ))}
+                </Container>
                 <button>dsadads</button>
             </Section>
         </Main>

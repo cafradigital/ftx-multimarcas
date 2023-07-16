@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { IContainerImageStyled } from './interfaces';
+import { IBackgroundImageStyled } from './interfaces';
 
 export const ImageContainer = styled.div<{
-    styled: IContainerImageStyled;
+    styled: IBackgroundImageStyled;
     imageUrl: string;
 }>`
     width: 100%;
@@ -10,6 +10,22 @@ export const ImageContainer = styled.div<{
 
     text-align: ${({ styled }) =>
         styled.align?.textAlign ? styled.align?.textAlign : 'initial'};
+
+    border-top-left-radius: ${({ styled }) =>
+        styled.borderRadius?.topLeft ? styled.borderRadius?.topLeft : '0'};
+
+    border-top-right-radius: ${({ styled }) =>
+        styled.borderRadius?.topRight ? styled.borderRadius?.topRight : '0'};
+
+    border-bottom-left-radius: ${({ styled }) =>
+        styled.borderRadius?.bottomLeft
+            ? styled.borderRadius?.bottomLeft
+            : '0'};
+
+    border-bottom-right-radius: ${({ styled }) =>
+        styled.borderRadius?.bottomRight
+            ? styled.borderRadius?.bottomRight
+            : '0'};
 
     display: flex;
 

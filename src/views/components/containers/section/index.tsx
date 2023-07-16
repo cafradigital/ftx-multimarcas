@@ -7,12 +7,15 @@ export * from './header';
 export const Section: FC<ISectionProps> = ({
     children,
     customStyleds,
-    styled
+    align,
+    height,
+    padding,
+    theme,
 }) => {
     return (
         <SectionContainer
             style={customStyleds}
-            styled={styled}
+            styled={{ align, height, padding, theme }}
         >
             {children}
         </SectionContainer>

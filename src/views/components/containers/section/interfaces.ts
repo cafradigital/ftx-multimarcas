@@ -32,7 +32,6 @@ export interface ISectionStyleds extends IStyledsContainer {
     theme?: 'primary' | 'secondary' | 'third' | 'none';
 }
 
-export interface ISectionProps extends IContainerProps {
+export interface ISectionProps extends IContainerProps, ISectionStyleds {
     customStyleds?: React.CSSProperties;
-    styled: ISectionStyleds;
 }

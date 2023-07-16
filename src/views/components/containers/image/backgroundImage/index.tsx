@@ -1,20 +1,21 @@
 import React from 'react';
-import { IContainerImageProps } from './interfaces';
+import { IBackgroundImageProps } from './interfaces';
 import { ImageContainer } from './styled';
 
-export const ContainerImage: React.FC<IContainerImageProps> = ({
+export const BackgroundImage: React.FC<IBackgroundImageProps> = ({
     children,
     borderRadius,
     customStyled,
-    url,
+    img,
     imageRepeat,
     typeAdaptation,
     align,
 }) => {
     return (
         <ImageContainer
-            imageUrl={url}
+            imageUrl={img.url}
             style={customStyled}
+            aria-label={img.label}
             styled={{
                 borderRadius,
                 imageRepeat,

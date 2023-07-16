@@ -13,9 +13,29 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 type themePropsStyled = {
-    textColor: string;
-    backgroundColor: string;
-    colorHeaders: string;
+    section: {
+        backgroundColor: string;
+        text: {
+            title: string;
+            subTitle: string;
+        };
+    };
+    cards: {
+        backgroundColor: string;
+        border: string;
+        text: {
+            title: string;
+            subTitle: string;
+        };
+    };
+    buttons: {
+        backgroundColor: string;
+        border: string;
+        text: {
+            title: string;
+            subTitle: string;
+        };
+    };
 };
 
 export interface IGlobalTheme {
@@ -26,18 +46,78 @@ export interface IGlobalTheme {
 
 export const GlobalTheme: IGlobalTheme = {
     primary: {
-        backgroundColor: '#212196',
-        textColor: '#ffffff',
-        colorHeaders: '#f28a2e',
+        section: {
+            backgroundColor: '#212196',
+            text: {
+                title: '#f28a2e',
+                subTitle: '#000000',
+            },
+        },
+        cards: {
+            backgroundColor: '#f28a2e',
+            border: '#ffffff',
+            text: {
+                title: '#ffffff',
+                subTitle: '#ffffff',
+            },
+        },
+        buttons: {
+            backgroundColor: 'black',
+            border: '#ffffff',
+            text: {
+                title: '#ffffff',
+                subTitle: '#ffffff',
+            },
+        },
     },
     secondary: {
-        backgroundColor: '#ffffff',
-        textColor: '#000000',
-        colorHeaders: '#212196',
+        section: {
+            backgroundColor: '#212196',
+            text: {
+                title: '#f28a2e',
+                subTitle: '#000000',
+            },
+        },
+        cards: {
+            backgroundColor: '#f28a2e',
+            border: '#ffffff',
+            text: {
+                title: '#ffffff',
+                subTitle: '#ffffff',
+            },
+        },
+        buttons: {
+            backgroundColor: 'black',
+            border: '#ffffff',
+            text: {
+                title: '#ffffff',
+                subTitle: '#ffffff',
+            },
+        },
     },
     third: {
-        backgroundColor: '#ffffff',
-        textColor: '#000000',
-        colorHeaders: '#ffffff',
+        section: {
+            backgroundColor: '#212196',
+            text: {
+                title: '#f28a2e',
+                subTitle: '#000000',
+            },
+        },
+        cards: {
+            backgroundColor: '#f28a2e',
+            border: '#ffffff',
+            text: {
+                title: '#ffffff',
+                subTitle: '#ffffff',
+            },
+        },
+        buttons: {
+            backgroundColor: 'black',
+            border: '#ffffff',
+            text: {
+                title: '#ffffff',
+                subTitle: '#ffffff',
+            },
+        },
     },
 };

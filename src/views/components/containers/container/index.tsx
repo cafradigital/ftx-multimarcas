@@ -5,10 +5,11 @@ import { StyledContainer } from './styled';
 export const Container: React.FC<IContainerComponentProps> = ({
     children,
     customStyleds,
-    styled,
+    align,
+    height,
 }) => {
     return (
-        <StyledContainer style={customStyleds} styled={styled}>
+        <StyledContainer style={customStyleds} styled={{ align, height }}>
             {children}
         </StyledContainer>
     );

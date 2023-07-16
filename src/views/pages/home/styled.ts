@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const TitlePrimarySection = styled.h1`
+    width: 100%;
+    max-width: 40rem;
+
     color: #fff;
     text-shadow: 1px 1px 10px black;
     font-size: 3rem;
@@ -16,6 +19,9 @@ export const TitlePrimarySection = styled.h1`
 `;
 
 export const TextPrimarySection = styled.p`
+    width: 100%;
+    max-width: 50rem;
+
     color: #fff;
     text-shadow: 1px 1px 10px black;
     font-size: 1.75rem;
