@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { IGlobalTheme } from './GlobalInterfaces';
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -12,111 +13,197 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
-type themePropsStyled = {
-    section: {
-        backgroundColor: string;
-        text: {
-            title: string;
-            subTitle: string;
-        };
-    };
-    cards: {
-        backgroundColor: string;
-        border: string;
-        text: {
-            title: string;
-            subTitle: string;
-        };
-    };
-    buttons: {
-        backgroundColor: string;
-        border: string;
-        text: {
-            title: string;
-            subTitle: string;
-        };
-    };
-};
-
-export interface IGlobalTheme {
-    primary: themePropsStyled;
-    secondary: themePropsStyled;
-    third: themePropsStyled;
-}
-
 export const GlobalTheme: IGlobalTheme = {
-    primary: {
-        section: {
-            backgroundColor: '#212196',
+    loading: {
+        background: '#ffffff',
+        color: '#212196',
+    },
+    sections: {
+        primary: {
             text: {
-                title: '#f28a2e',
-                subTitle: '#000000',
+                title: {
+                    color: '#ffffff',
+                    textShadown: true,
+                },
+                subTitle: {
+                    color: '#ffffff',
+                    textShadown: true,
+                    letterSpacing: '6px',
+                },
             },
         },
-        cards: {
-            backgroundColor: '#f28a2e',
-            border: '#ffffff',
+        second: {
+            background: '#ffffff',
             text: {
-                title: '#ffffff',
-                subTitle: '#ffffff',
+                title: {
+                    color: '#212196',
+                    textShadown: true,
+                },
+                subTitle: {
+                    color: '#000000',
+                },
+            },
+            cards: {
+                title: {
+                    color: '#ffffff',
+                },
+                background: '#212196',
+                boxShadown: true,
+            },
+            button: {
+                title: {
+                    color: '#000000',
+                },
+                background: '#7ed957',
+                border: '#7ed957',
+                boxShadown: true,
+                icon: {
+                    color: '#000000',
+                },
             },
         },
-        buttons: {
-            backgroundColor: 'black',
-            border: '#ffffff',
+        third: {
+            background: '#212196',
             text: {
-                title: '#ffffff',
-                subTitle: '#ffffff',
+                title: {
+                    color: '#f28a2e',
+                    textShadown: true,
+                },
+                list: {
+                    color: '#ffffff',
+                },
+            },
+            cards: {
+                boxShadown: true,
+                border: '#f28a2e',
+            },
+            button: {
+                title: {
+                    color: '#000000',
+                },
+                background: '#7ed957',
+                border: '#7ed957',
+                boxShadown: true,
+                icon: {
+                    color: '#000000',
+                },
+            },
+        },
+        fourth: {
+            background: '#ffffff',
+            text: {
+                title: {
+                    color: '#212196',
+                    textShadown: true,
+                },
+                subTitle: {
+                    color: '#000000',
+                },
+            },
+            cards: {
+                title: {
+                    color: '#212196',
+                    textShadown: true,
+                },
+                subTitle: {
+                    color: '#000000',
+                },
+            },
+            button: {
+                title: {
+                    color: '#000000',
+                },
+                background: '#7ed957',
+                border: '#7ed957',
+                boxShadown: true,
+                icon: {
+                    color: '#000000',
+                },
+            },
+        },
+        fifth: {
+            background: '#212196',
+            text: {
+                title: {
+                    color: '#f28a2e',
+                    textShadown: true,
+                },
+                subTitle: {
+                    color: '#ffffff',
+                },
+            },
+            cards: {
+                title: {
+                    color: '#f28a2e',
+                    textShadown: true,
+                },
+                subTitle: {
+                    color: '#ffffff',
+                },
+            },
+            button: {
+                title: {
+                    color: '#000000',
+                },
+                background: '#7ed957',
+                border: '#7ed957',
+                boxShadown: true,
+                icon: {
+                    color: '#000000',
+                },
+            },
+        },
+        sixth: {
+            background: '#ffffff',
+            text: {
+                title: {
+                    color: '#212196',
+                    textShadown: true,
+                },
+                subTitle: {
+                    color: '#000000',
+                },
+            },
+            cards: {
+                title: {
+                    color: '#ffffff',
+                },
+                subTitle: {
+                    color: '#000000',
+                },
+                background: '#212196',
+                boxShadown: true,
+            },
+            button: {
+                title: {
+                    color: '#000000',
+                },
+                background: '#7ed957',
+                border: '#7ed957',
+                boxShadown: true,
+                icon: {
+                    color: '#000000',
+                },
             },
         },
     },
-    secondary: {
-        section: {
-            backgroundColor: '#212196',
-            text: {
-                title: '#f28a2e',
-                subTitle: '#000000',
-            },
+    footer: {
+        background: '#212196',
+        icons: {
+            color: '#000000',
         },
-        cards: {
-            backgroundColor: '#f28a2e',
-            border: '#ffffff',
-            text: {
-                title: '#ffffff',
-                subTitle: '#ffffff',
+        text: {
+            title: {
+                color: '#ffffff',
             },
-        },
-        buttons: {
-            backgroundColor: 'black',
-            border: '#ffffff',
-            text: {
-                title: '#ffffff',
-                subTitle: '#ffffff',
+            subTitle: {
+                color: '#ffffff',
             },
-        },
-    },
-    third: {
-        section: {
-            backgroundColor: '#212196',
-            text: {
-                title: '#f28a2e',
-                subTitle: '#000000',
+            link: {
+                color: '#ffffff',
             },
-        },
-        cards: {
-            backgroundColor: '#f28a2e',
-            border: '#ffffff',
-            text: {
-                title: '#ffffff',
-                subTitle: '#ffffff',
-            },
-        },
-        buttons: {
-            backgroundColor: 'black',
-            border: '#ffffff',
-            text: {
-                title: '#ffffff',
-                subTitle: '#ffffff',
+            list: {
+                color: '#ffffff',
             },
         },
     },

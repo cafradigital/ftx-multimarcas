@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { IGlobalTheme } from '../../../interfaces';
+import { IGlobalTheme } from '../../../../../GlobalInterfaces';
 import { ILoadingStyleds } from '../../intefaces';
 
 export const Loading = styled.div<{
@@ -10,8 +10,9 @@ export const Loading = styled.div<{
     &,
     &:before,
     &:after {
-        background: ${({ styled: { color }, theme }) =>
-            color || theme.primary.backgroundColor};
+        background: ${({ styled, theme }) =>
+            styled.color ? styled.color : theme.loading.color};
+
         -webkit-animation: load1 1s infinite ease-in-out;
         animation: load1 1s infinite ease-in-out;
         width: ${({ styled: { size } }) => {
@@ -36,8 +37,7 @@ export const Loading = styled.div<{
         }};
     }
     & {
-        color: ${({ styled: { color }, theme }) =>
-            color || theme.primary.backgroundColor};
+        color: ${({ styled: { color }, theme }) => color || theme.mainColor};
         text-indent: -9999rem;
         position: relative;
         font-size: 11px;

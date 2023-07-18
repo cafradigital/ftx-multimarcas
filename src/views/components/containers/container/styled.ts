@@ -1,10 +1,8 @@
 import styled from 'styled-components';
-import { IGlobalTheme } from '../../interfaces';
 import { IContainerComponentStyled } from './interfaces';
 
 export const StyledContainer = styled.div<{
     styled: IContainerComponentStyled;
-    theme: IGlobalTheme;
 }>`
     width: 100%;
 

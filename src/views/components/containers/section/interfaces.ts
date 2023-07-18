@@ -1,3 +1,4 @@
+import { IThemes } from '../../../../GlobalInterfaces';
 import { IContainerProps, IStyledsContainer } from '../interfaces';
 
 export interface ISectionStyleds extends IStyledsContainer {
@@ -29,7 +30,7 @@ export interface ISectionStyleds extends IStyledsContainer {
         | 'side-edges'
         | 'top-and-bottom-edges'
         | 'none';
-    theme?: 'primary' | 'secondary' | 'third' | 'none';
+    theme?: IThemes;
 }
 
 export interface ISectionProps extends IContainerProps, ISectionStyleds {

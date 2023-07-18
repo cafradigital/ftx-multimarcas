@@ -1,10 +1,15 @@
 import styled from 'styled-components';
+import { IGlobalTheme } from '../../../GlobalInterfaces';
+import { ILoadingStyleds } from './intefaces';
 
 export const ContainerLoading = styled.div<{
-    backgroundColor?: string;
+    styled: Omit<ILoadingStyleds, 'color' | 'size'>;
+    theme: IGlobalTheme;
 }>`
-    background-color: ${({ backgroundColor }) =>
-        backgroundColor || '#00000080'};
+    background-color: ${({ styled, theme }) =>
+        styled.backgroundColor
+            ? styled.backgroundColor
+            : theme.loading.background};
 
     width: 100%;
     height: 100vh;

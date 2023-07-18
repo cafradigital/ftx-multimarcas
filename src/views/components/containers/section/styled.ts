@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { IGlobalTheme } from '../../interfaces';
+import { IGlobalTheme } from '../../../../GlobalInterfaces';
 import { ISectionStyleds } from './interfaces';
 
 export const SectionContainer = styled.section<{
@@ -77,13 +77,19 @@ export const SectionContainer = styled.section<{
 
     background-color: ${({ styled, theme }) => {
         switch (styled.theme) {
-            case 'primary':
-                return theme.primary.backgroundColor;
-            case 'secondary':
-                return theme.secondary.backgroundColor;
+            case 'second':
+                return theme.sections.second.background;
             case 'third':
-                return theme.third.backgroundColor;
-            case 'none':
+                return theme.sections.third.background;
+            case 'fourth':
+                return theme.sections.fourth.background;
+            case 'fifth':
+                return theme.sections.fifth.background;
+            case 'sixth':
+                return theme.sections.sixth.background;
+            case 'footer':
+                return theme.footer.background;
+            default:
                 return 'transparent';
         }
     }};

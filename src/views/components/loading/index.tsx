@@ -25,7 +25,7 @@ export const Loading: React.FC<ILoadingProps> = ({
     };
 
     return (
-        <ContainerLoading backgroundColor={backgroundColor}>
+        <ContainerLoading styled={{ backgroundColor }}>
             {Types[type]}
         </ContainerLoading>
     );

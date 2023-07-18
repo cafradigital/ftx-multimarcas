@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { IGlobalTheme } from '../../interfaces';
+import { IGlobalTheme } from '../../../../GlobalInterfaces';
 import { ILeafCardStyleds } from './interfaces';
 
 export const ContainerLeafCard = styled.div<{
     styled: ILeafCardStyleds;
-    theme: IGlobalTheme;
+    theme?: IGlobalTheme;
 }>`
     max-width: ${({ styled }) => {
         switch (styled.size) {
@@ -62,13 +62,17 @@ export const ContainerLeafCard = styled.div<{
 
     background-color: ${({ styled, theme }) => {
         switch (styled.theme) {
-            case 'primary':
-                return theme.primary.colorCards;
-            case 'secondary':
-                return theme.secondary.colorCards;
+            case 'second':
+                return theme.sections.second.cards.background;
             case 'third':
-                return theme.third.colorCards;
-            case 'none':
+                return theme.sections.third.cards.background;
+            case 'fourth':
+                return theme.sections.fourth.cards.background;
+            case 'fifth':
+                return theme.sections.fifth.cards.background;
+            case 'sixth':
+                return theme.sections.sixth.cards.background;
+            default:
                 return 'black';
         }
     }};
@@ -79,12 +83,43 @@ export const ContainerLeafCard = styled.div<{
     h2 {
         color: ${({ styled, theme }) => {
             switch (styled.theme) {
-                case 'primary':
-                    return theme.primary.textColor;
-                case 'secondary':
-                    return theme.secondary.textColor;
+                case 'second':
+                    return theme.sections.second.cards.title?.color;
                 case 'third':
-                    return theme.third.textColor;
+                    return theme.sections.third.cards.title?.color;
+                case 'fourth':
+                    return theme.sections.fourth.cards.title?.color;
+                case 'fifth':
+                    return theme.sections.fifth.cards.title?.color;
+                case 'sixth':
+                    return theme.sections.sixth.cards.title?.color;
+                default:
+                    return 'black';
+            }
+        }};
+
+        text-shadow: ${({ styled, theme }) => {
+            switch (styled.theme) {
+                case 'second':
+                    if (theme.sections.second.cards.title?.textShadown)
+                        return '0.5px 0.5px 1.5px #00000080';
+                    break;
+                case 'third':
+                    if (theme.sections.third.cards.title?.textShadown)
+                        return '0.5px 0.5px 1.5px #00000080';
+                    break;
+                case 'fourth':
+                    if (theme.sections.fourth.cards.title?.textShadown)
+                        return '0.5px 0.5px 1.5px #00000080';
+                    break;
+                case 'fifth':
+                    if (theme.sections.fifth.cards.title?.textShadown)
+                        return '0.5px 0.5px 1.5px #00000080';
+                    break;
+                case 'sixth':
+                    if (theme.sections.sixth.cards.title?.textShadown)
+                        return '0.5px 0.5px 1.5px #00000080';
+                    break;
             }
         }};
 

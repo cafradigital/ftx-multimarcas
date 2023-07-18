@@ -1,7 +1,8 @@
 import React from 'react';
+import { IThemes } from '../../../../GlobalInterfaces';
 
 export interface ILeafCardStyleds {
-    theme: 'primary' | 'secondary' | 'third' | 'none';
+    theme?: IThemes;
     size: 'small' | 'medium' | 'large';
     colorShadown?: string;
 }

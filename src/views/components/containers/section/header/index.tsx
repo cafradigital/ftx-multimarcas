@@ -9,12 +9,7 @@ export const HeaderSection: React.FC<IHeaderSectionProps> = ({
     customStyleds,
 }) => {
     return (
-        <ContainerTextHeaderSection
-            style={customStyleds}
-            styled={{
-                theme,
-            }}
-        >
+        <ContainerTextHeaderSection style={customStyleds} styled={{ theme }}>
             <h1>{title}</h1>
             {subTitle ? <p>{subTitle}</p> : ''}
         </ContainerTextHeaderSection>

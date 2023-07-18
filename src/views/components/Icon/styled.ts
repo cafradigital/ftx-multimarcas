@@ -1,14 +1,32 @@
 import styled from 'styled-components';
-import { IGlobalTheme } from '../interfaces';
+import { IGlobalTheme } from '../../../GlobalInterfaces';
 import { IConStyledProps } from './interface';
 
 export const IconContainer = styled.i<{
     styled: IConStyledProps;
-    theme: IGlobalTheme;
+    theme?: IGlobalTheme;
 }>`
     color: ${({ styled, theme }) => {
-        if (styled?.color) return styled.color;
-        else return theme.primary.color;
+        if (styled.color) return styled.color;
+
+        switch (styled.theme) {
+            case 'primary':
+                return theme.sections.primary.icon?.color;
+            case 'second':
+                return theme.sections.second.icon?.color;
+            case 'third':
+                return theme.sections.third.icon?.color;
+            case 'fourth':
+                return theme.sections.fourth.icon?.color;
+            case 'fifth':
+                return theme.sections.fifth.icon?.color;
+            case 'sixth':
+                return theme.sections.sixth.icon?.color;
+            case 'footer':
+                return theme.footer.icons?.color;
+            default:
+                return 'black';
+        }
     }};
 
     cursor: ${({ styled }) => (styled?.cursor ? styled.cursor : 'initial')};

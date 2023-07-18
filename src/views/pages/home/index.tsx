@@ -10,10 +10,9 @@ import {
 } from '../../components/containers';
 import { Loading } from '../../components/loading';
 import { pageLaunchFunction } from '../../shared/initialView';
-import { TextPrimarySection, TitlePrimarySection } from './styled';
 
 export const Home: FC = () => {
-    const { primarySection, secondarySection } = DataLandingPage;
+    const { sections } = DataLandingPage;
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -32,27 +31,29 @@ export const Home: FC = () => {
             {loading && (
                 <Loading size="big" type="four" backgroundColor="#e3e3e3" />
             )}
-            <Section height="8.5x" theme={primarySection.theme} padding="none">
+            <Section height="8.5x" theme={'primary'} padding="none">
                 <BackgroundImage
                     typeAdaptation="cover"
                     img={{
-                        url: primarySection.image.url,
-                        label: primarySection.image.label,
+                        url: sections.primary.image?.url
+                            ? sections.primary.image?.url
+                            : '',
+                        label: sections.primary.image?.label
+                            ? sections.primary.image?.label
+                            : 'Imagem Não Encontrada',
                     }}
                     align={{
                         direction: 'column',
                         'align-items': 'center',
                         'justify-content': 'center',
-                        gap: '20px',
                         textAlign: 'center',
                     }}
                 >
-                    <TitlePrimarySection>
-                        {primarySection.texts.title}
-                    </TitlePrimarySection>
-                    <TextPrimarySection>
-                        {primarySection.texts.subTitle}
-                    </TextPrimarySection>
+                    <HeaderSection
+                        title={sections.primary.texts.title}
+                        subTitle={sections.primary.texts.subTitle}
+                        theme={'primary'}
+                    />
                 </BackgroundImage>
             </Section>
             <Section
@@ -62,12 +63,12 @@ export const Home: FC = () => {
                     gap: '5rem',
                 }}
                 padding="full-edges"
-                theme={secondarySection.theme}
+                theme={'second'}
             >
                 <HeaderSection
-                    title={secondarySection.texts.title}
-                    subTitle={secondarySection.texts.subTitle}
-                    theme={secondarySection.theme}
+                    title={sections.second.texts.title}
+                    subTitle={sections.second.texts.subTitle}
+                    theme={'second'}
                 />
                 <Container
                     align={{
@@ -77,15 +78,17 @@ export const Home: FC = () => {
                         gap: '5rem',
                     }}
                 >
-                    {secondarySection.cards.map((card, index) => (
+                    {sections.second.cards.map((card, index) => (
                         <LeafCard
                             key={index}
-                            title={card.title}
+                            title={card.texts.title}
                             size="medium"
-                            theme={secondarySection.theme}
+                            theme={'second'}
                             img={{
-                                url: card.img.url,
-                                label: card.img.label,
+                                url: card.image?.url ? card.image?.url : '',
+                                label: card.image?.label
+                                    ? card.image?.label
+                                    : 'Imagem Não Encontrada',
                             }}
                             customStyleds={{
                                 color: '#ffffff',

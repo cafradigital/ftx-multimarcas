@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { IGlobalTheme } from '../../../interfaces';
+import { IGlobalTheme } from '../../../../../GlobalInterfaces';
 import { ILoadingStyleds } from '../../intefaces';
 
 export const Loading = styled.div<{
@@ -20,8 +20,8 @@ export const Loading = styled.div<{
         animation: load7 1.8s infinite ease-in-out;
     }
     & {
-        color: ${({ styled: { color }, theme }) =>
-            color || theme.primary.backgroundColor};
+        color: ${({ styled, theme }) =>
+            styled.color ? styled.color : theme.loading.color};
         font-size: ${({ styled: { size } }) => {
             switch (size) {
                 case 'big':

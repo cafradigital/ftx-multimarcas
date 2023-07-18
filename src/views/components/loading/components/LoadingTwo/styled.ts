@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { IGlobalTheme } from '../../../interfaces';
+import { IGlobalTheme } from '../../../../../GlobalInterfaces';
 import { ILoadingStyleds } from '../../intefaces';
 
 export const Loading = styled.div<{
@@ -8,8 +8,9 @@ export const Loading = styled.div<{
 }>`
     z-index: 9999;
     & {
-        color: ${({ styled: { color }, theme }) =>
-            color || theme.primary.backgroundColor};
+        color: ${({ styled, theme }) =>
+            styled.color ? styled.color : theme.loading.color};
+
         font-size: ${({ styled: { size } }) => {
             switch (size) {
                 case 'big':
