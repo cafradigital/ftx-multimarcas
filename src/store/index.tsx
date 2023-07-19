@@ -55,19 +55,3 @@ export const DataLandingPage: IDataLadingPage = {
         },
     },
 };
-
-// primarySection: {
-//     theme: 'none',
-//     image: {
-//         url: primarySectionImage,
-//         label: 'Imagem grande de apresentação do produto central da loja. (Imagem de Homem usando uma Roupa de frio)',
-//     },
-//     texts: {
-//         title: `Tudo para Moda Masculina em um só lugar`,
-//         subTitle: `Variedade e preço baixo para todos os estilos e idades`,
-//     },
-// },
-// secondarySection: {
-//     theme: 'primary',
-
-// },
