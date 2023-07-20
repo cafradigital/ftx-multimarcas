@@ -54,8 +54,8 @@ export const GlobalTheme: IGlobalTheme = {
                 title: {
                     color: '#000000',
                 },
-                background: '#7ed957',
-                border: '#7ed957',
+                background: 'red',
+                border: 'red',
                 boxShadown: true,
                 icon: {
                     color: '#000000',
@@ -68,6 +68,9 @@ export const GlobalTheme: IGlobalTheme = {
                 title: {
                     color: '#f28a2e',
                     textShadown: true,
+                },
+                subTitle: {
+                    color: '#ffffff',
                 },
                 list: {
                     color: '#ffffff',

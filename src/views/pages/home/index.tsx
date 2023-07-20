@@ -1,5 +1,6 @@
 import { FC, useEffect, useState } from 'react';
 import { DataLandingPage } from '../../../store';
+import { Button } from '../../components/button';
 import { LeafCard } from '../../components/cards';
 import {
     BackgroundImage,
@@ -96,7 +97,149 @@ export const Home: FC = () => {
                         />
                     ))}
                 </Container>
-                <button>dsadads</button>
+                <Button theme="second" type="WhatsApp" href="#">
+                    CHAMA NO WHATS
+                </Button>
+            </Section>
+            <Section
+                align={{
+                    'align-items': 'center',
+                    direction: 'column',
+                    gap: '5rem',
+                }}
+                padding="full-edges"
+                theme={'third'}
+            >
+                <HeaderSection
+                    title={sections.second.texts.title}
+                    subTitle={sections.second.texts.subTitle}
+                    theme={'third'}
+                />
+                <Container
+                    align={{
+                        'align-items': 'center',
+                        'justify-content': 'space-around',
+                        wrap: 'wrap',
+                        gap: '5rem',
+                    }}
+                >
+                    dsadas
+                </Container>
+                <Button theme="second" type="WhatsApp" href="#">
+                    CHAMA NO WHATS
+                </Button>
+            </Section>
+            <Section
+                align={{
+                    'align-items': 'center',
+                    direction: 'column',
+                    gap: '5rem',
+                }}
+                padding="full-edges"
+                theme={'fourth'}
+            >
+                <HeaderSection
+                    title={sections.second.texts.title}
+                    subTitle={sections.second.texts.subTitle}
+                    theme={'fourth'}
+                />
+                <Container
+                    align={{
+                        'align-items': 'center',
+                        'justify-content': 'space-around',
+                        wrap: 'wrap',
+                        gap: '5rem',
+                    }}
+                >
+                    dsadas
+                </Container>
+                <Button theme="second" type="WhatsApp" href="#">
+                    CHAMA NO WHATS
+                </Button>
+            </Section>
+            <Section
+                align={{
+                    'align-items': 'center',
+                    direction: 'column',
+                    gap: '5rem',
+                }}
+                padding="full-edges"
+                theme={'fifth'}
+            >
+                <HeaderSection
+                    title={sections.second.texts.title}
+                    subTitle={sections.second.texts.subTitle}
+                    theme={'fifth'}
+                />
+                <Container
+                    align={{
+                        'align-items': 'center',
+                        'justify-content': 'space-around',
+                        wrap: 'wrap',
+                        gap: '5rem',
+                    }}
+                >
+                    dsadas
+                </Container>
+                <Button theme="second" type="WhatsApp" href="#">
+                    CHAMA NO WHATS
+                </Button>
+            </Section>
+            <Section
+                align={{
+                    'align-items': 'center',
+                    direction: 'column',
+                    gap: '5rem',
+                }}
+                padding="full-edges"
+                theme={'fourth'}
+            >
+                <HeaderSection
+                    title={sections.second.texts.title}
+                    subTitle={sections.second.texts.subTitle}
+                    theme={'fourth'}
+                />
+                <Container
+                    align={{
+                        'align-items': 'center',
+                        'justify-content': 'space-around',
+                        wrap: 'wrap',
+                        gap: '5rem',
+                    }}
+                >
+                    dsadas
+                </Container>
+                <Button theme="second" type="WhatsApp" href="#">
+                    CHAMA NO WHATS
+                </Button>
+            </Section>
+            <Section
+                align={{
+                    'align-items': 'center',
+                    direction: 'column',
+                    gap: '5rem',
+                }}
+                padding="full-edges"
+                theme={'fifth'}
+            >
+                <HeaderSection
+                    title={sections.second.texts.title}
+                    subTitle={sections.second.texts.subTitle}
+                    theme={'fifth'}
+                />
+                <Container
+                    align={{
+                        'align-items': 'center',
+                        'justify-content': 'space-around',
+                        wrap: 'wrap',
+                        gap: '5rem',
+                    }}
+                >
+                    dsadas
+                </Container>
+                <Button theme="second" type="WhatsApp" href="#">
+                    CHAMA NO WHATS
+                </Button>
             </Section>
         </Main>
     );
